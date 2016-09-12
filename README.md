@@ -23,7 +23,7 @@ Resources
 # Week 1
 
 ## Lecture
-* [Introduction slides](https://onedrive.live.com/redir?resid=AB603D769EDBF24E!78307&authkey=!AAILJL-DwExqnac&ithint=file%2cpptx)
+* [Introduction slides](https://1drv.ms/p/s!Ak7y2552PWCrhONjAgskv4PATGqdpw)
 * [The contract for this course](http://1drv.ms/1DbmnG9)
 
 Some assignments from previous years:
