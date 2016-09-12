@@ -18,7 +18,7 @@ Resources
 ## Contact the lecturer
 * Email: bryan.duggan@dit.ie
 * Twitter: [@skooter500](http://twitter.com/skooter500)
-* Slack: [dt228-oop-2015.slack.com](https://oop-2016-2017.slack.com)
+* Slack: [oop-2016-2017.slack.com](https://oop-2016-2017.slack.com)
 
 # Week 1
 
