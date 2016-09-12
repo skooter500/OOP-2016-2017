@@ -20,12 +20,6 @@ Resources
 * Twitter: [@skooter500](http://twitter.com/skooter500)
 * Slack: [oop-2016-2017.slack.com](https://oop-2016-2017.slack.com)
 
-# Week 1
-
-## Lecture
-* [Introduction slides](https://1drv.ms/p/s!Ak7y2552PWCrhONjAgskv4PATGqdpw)
-* [The contract for this course](http://1drv.ms/1DbmnG9)
-
 Some assignments from previous years:
 
 [![YouTube](http://img.youtube.com/vi/sPjZSRCmt1U/0.jpg)](https://www.youtube.com/watch?v=sPjZSRCmt1U)
@@ -34,10 +28,17 @@ Some assignments from previous years:
 
 [![YouTube](http://img.youtube.com/vi/S575a92AsuQ/0.jpg)](https://www.youtube.com/watch?v=S575a92AsuQ)
 
+# Week 1
+
+## Lecture
+* [Introduction slides](https://1drv.ms/p/s!Ak7y2552PWCrhONjAgskv4PATGqdpw)
+* [The contract for this course](http://1drv.ms/1DbmnG9)
+
 ## Lab
 
 ### Learning Outcomes
 - Sign up for the class Slack
+- Enroll on Webcourses
 - Become familiar with the syntax of Processing
 - Become familiar with writing and running sketches in Processing
 - Practice using variables
@@ -59,7 +60,7 @@ Take the time to look up the following methods in the [Processing language refer
 * fill
 * size
 
-Here are two shapes you can draw:
+Here are some shapes you can draw:
 
 ![Sketch](images/p1.png)
 
