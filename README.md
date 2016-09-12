@@ -2,7 +2,7 @@
 
 Resources
 ---------
-* [Webcourses](http://dit.ie/webcourses)
+* [Webcourses](http://dit.ie/webcourses) - Course code: CMPU2016
 * [Slack](https://oop-2016-2017.slack.com)
 * [Processing](http://processing.org)
 * [The Processing language reference](http://processing.org/reference/)
@@ -46,6 +46,8 @@ Some assignments from previous years:
 - Practice writing code to generate sequences of numbers
 
 Firstly, go to https://oop-2016-2017.slack.com and sign up for the slack with your DIT email address. When you are signed up, send a little greeting to everyone on the #general channel. If you have a smartphone, you might want to install the Slack app. It's free. Also if you install the app, you will probably want to disable certain notifications, otherwise your phone will be buzzing every time someone posts anything. [Here is an article that explains how to do this](https://slack.zendesk.com/hc/en-us/articles/201649323-Channel-and-group-notification-preferences).
+
+Log onto Webcourses and enroll on the module CMPU2016.
 
 Take the time to look up the following methods in the [Processing language reference](http://processing.org/reference/ ) to make sure you are clear about the syntax and parameters:
 
