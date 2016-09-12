@@ -32,7 +32,7 @@ Some assignments from previous years:
 
 ## Lecture
 * [Introduction slides](https://1drv.ms/p/s!Ak7y2552PWCrhONjAgskv4PATGqdpw)
-* [The contract for this course](http://1drv.ms/1DbmnG9)
+* [The contract for this course](https://1drv.ms/w/s!Ak7y2552PWCrjPYXt8HlWl1T1cg5Og)
 
 ## Lab
 
