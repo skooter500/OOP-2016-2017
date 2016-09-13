@@ -50,8 +50,10 @@ Firstly, go to https://oop-2016-2017.slack.com and sign up for the slack with yo
 
 Log onto Webcourses and enroll on the module CMPU2016.
 
-Take the time to look up the following methods in the [Processing language reference](http://processing.org/reference/ ) to make sure you are clear about the syntax and parameters:
+Look up the following methods in the [Processing language reference](http://processing.org/reference/ ) to make sure you are clear about the syntax and parameters:
 
+* noStroke
+* noFill
 * line
 * ellipse
 * rect
@@ -59,29 +61,17 @@ Take the time to look up the following methods in the [Processing language refer
 * stroke
 * fill
 * size
+* arc
+* triangle
 
-Here are some shapes you can draw:
+Write a processing sketch to draw the following shapes:
 
 ![Sketch](images/p1.png)
 
+![Sketch](images/p1.1.png)
+
+![Sketch](images/p1.2.png)
+
 Try experimenting with colours!
 
-Now try and figure out how to draw these patterns:
-
-![Sketch](images/p2.png)
-
-(Use variables as much as possible and use a loop in your solution)
-
-Now try this one:
-
-![Sketch](images/p3.png)
-
-Finally try this one:
-
-![Sketch](images/p4.png)
-
-Notice the mouths
-
-Feel free to experiment with colour!
-
-When you are finished with these exercises, [log onto webcourses](http://dit.ie/webcourses) and complete the MCQ for this week
+[Log onto webcourses](http://dit.ie/webcourses) and do this weeks MCQ.
