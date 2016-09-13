@@ -42,7 +42,7 @@ Some assignments from previous years:
 - Become familiar with the syntax of Processing
 - Become familiar with writing and running sketches in Processing
 
-Firstly, go to https://oop-2016-2017.slack.com and sign up for the slack with your DIT email address. When you are signed up, send a little greeting to everyone on the #general channel. If you have a smartphone, you might want to install the Slack app. It's free. Also if you install the app, you will probably want to disable certain notifications, otherwise your phone will be buzzing every time someone posts anything. [Here is an article that explains how to do this](https://slack.zendesk.com/hc/en-us/articles/201649323-Channel-and-group-notification-preferences).
+Firstly, go to https://oop-2016-2017.slack.com and sign up for the slack with your DIT email address. Make sure anc click *Create an account* rather than try and enter your DIT credentials at the login screen, which wont work. When you are signed up, send a little greeting to everyone on the #general channel. If you have a smartphone, you might want to install the Slack app. It's free. Also if you install the app, you will probably want to disable certain notifications, otherwise your phone will be buzzing every time someone posts anything. [Here is an article that explains how to do this](https://slack.zendesk.com/hc/en-us/articles/201649323-Channel-and-group-notification-preferences).
 
 Log onto Webcourses and enroll on the module CMPU2016.
 
@@ -68,6 +68,6 @@ Write a processing sketch to draw the following shapes:
 
 ![Sketch](images/p1.2.png)
 
-Try experimenting with different colours
+I prefer to draw the shapes on paper first before I try and work out the coordinates. Try experimenting with different colours
 
 [Log onto webcourses](http://dit.ie/webcourses) and do this weeks MCQ.
