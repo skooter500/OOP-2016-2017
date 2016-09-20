@@ -44,7 +44,7 @@ Some assignments from previous years:
 - Learn how to get input from the keyboard
 - Learn how to import libraries into Processing
 
-This is a video of a game called Bugzap that you can try and make in Processing today:
+This is a video of a game called Bugzap that you can try and make in Processing today. There is a fair bit to it, so don't worry if you don't manage to complete everything.
 
 [![YouTube](http://img.youtube.com/vi/s6PA8jtWneQ/0.jpg)](https://www.youtube.com/watch?v=s6PA8jtWneQ)
 
