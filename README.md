@@ -35,6 +35,14 @@ Some assignments from previous years:
 - [Examples of using loops in Processing](processing/loops)
 
 # Lab
+## Learning Outcomes
+- Use what you learned in class to build a complete game system in Processing
+- Practice drawing stuff and working out relative co-ordinates
+- Practice using variables and compound if statements
+- Gain experience thinking computationally
+- Learn how to use random numbers
+- Learn how to get input from the keyboard
+- Learn how to import libraries into Processing
 
 This is a video of a game called Bugzap that you can try and make in Processing today:
 
