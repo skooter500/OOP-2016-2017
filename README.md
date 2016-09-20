@@ -28,6 +28,48 @@ Some assignments from previous years:
 
 [![YouTube](http://img.youtube.com/vi/S575a92AsuQ/0.jpg)](https://www.youtube.com/watch?v=S575a92AsuQ)
 
+# Week 2
+## Lecture
+- [Quadrants sketch](processing/quadrants) - How to use the if statement
+- [Rectangle sketch](processing/rectangle) - Rectangle moves back and forth across the screen
+- [Examples of using loops in Processing](processing/loops)
+
+# Lab
+
+This is a video of a game called Bugzap that you can try and make in Processing today:
+
+[![YouTube](http://img.youtube.com/vi/s6PA8jtWneQ/0.jpg)](https://www.youtube.com/watch?v=s6PA8jtWneQ)
+
+How you should do it:
+- Get the main game working first and then if you have time, add fonts, sound, the splash screen and the game over screen.
+- Write some code to draw the bug. You can write a method to do this if you like (but it's not essential). Here is [an article on using methods in processing](https://processing.org/examples/functions.html). Also make global variables for the bug position and size.
+- Get the bug moving. The bug moves a random amount either to the left or the right and it also moves down the screen. Use the random method in Processing to generate random numbers. Also the bug can't move off the screen. You can use the % operator to make something happen on an interval. For example:
+
+  ```Java
+  if (frameCount % 60 == 0)
+  {
+    // Code in here will happen once per second
+  }
+  ```
+- Write some code to draw the player. Use variables to control the player position and size. A method is good here too!
+- Write code to move the player in response to a key presses. This is one way to do keyboard handling in Processing:
+
+```Java
+if (keyPressed)
+{
+  if (keyCode == LEFT)
+  {
+    // This will happen if the left key is pressed
+  }
+}
+```
+- Now add the player lazer. I used to UP key for this. I just drew a line for the lazer.
+- Make a variable for score and check for collisions between the lazer and the bug. Add a variable for score. You can print stuff to the screen using the text method in Processing. In my version, I actually used [this processing library](http://www.foobarquarium.de/blog/processing/MovingLetters/) which makes wireframe text.
+- Make some sound effects and add them to the game. I used [BFXR](http://www.bfxr.net/) to make the sounds and the Minim library to play them, but you might prefer to use the [built-in audio methods in Processing](https://processing.org/tutorials/sound/).
+- Add the splash screen and game over screen
+
+Upload pictures of your creations to the Slack and do this weeks MCQ.
+
 # Week 1
 
 ## Lecture
