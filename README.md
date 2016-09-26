@@ -28,11 +28,17 @@ Some assignments from previous years:
 
 [![YouTube](http://img.youtube.com/vi/S575a92AsuQ/0.jpg)](https://www.youtube.com/watch?v=S575a92AsuQ)
 
+# Week 3
+## Lecture
+- [Trigonometry problem set](http://www.tippcityschools.com/cms/lib6/OH01000855/Centricity/Domain/111/Acc%20Geom%20eDay%201.pdf)
+- 
+
 # Week 2
 ## Lecture
 - [Quadrants sketch](processing/quadrants) - How to use the if statement
 - [Rectangle sketch](processing/rectangle) - Rectangle moves back and forth across the screen
 - [Examples of using loops in Processing](processing/loops)
+- [Solution to the BugZap lab](https://github.com/skooter500/BugZap) 
 
 # Lab
 ## Learning Outcomes
