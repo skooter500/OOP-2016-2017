@@ -35,6 +35,13 @@ Some assignments from previous years:
 - [Psychedelic Spirals sketch](https://github.com/skooter500/psychedelicSpirals)
 - [Circles explained](https://www.khanacademy.org/math/trigonometry/unit-circle-trig-func/unit-circle-definition-of-trig-functions/v/unit-circle-definition-of-trig-functions-1)
 
+Generative art:
+
+[![YouTube](http://img.youtube.com/vi/LaarVR1AOvs/0.jpg)](https://www.youtube.com/watch?v=LaarVR1AOvs)
+
+[![YouTube](http://img.youtube.com/vi/x0OK1GiI83s/0.jpg)](https://www.youtube.com/watch?v=x0OK1GiI83s)
+
+
 In the lecture we learned how to make spiral shapes using a for loop with sin and cos. In the lab today you will make a sketch that draws star shapes with random numbers of points and random colours. Here is what the finished sketch could look like:
 
 ![Sketch](images/p5.png)
