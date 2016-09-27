@@ -41,6 +41,16 @@ Generative art:
 
 [![YouTube](http://img.youtube.com/vi/x0OK1GiI83s/0.jpg)](https://www.youtube.com/watch?v=x0OK1GiI83s)
 
+# Lab
+
+## Learning outcomes
+
+Use variables
+Use for loops
+Use methods
+Construct an algorithm to solve a problem using sin, cos and the unit circle
+Use drawing and colours in a Processing sketch
+Use random numbers
 
 In the lecture we learned how to make spiral shapes using a for loop with sin and cos. In the lab today you will make a sketch that draws star shapes with random numbers of points and random colours. Here is what the finished sketch could look like:
 
