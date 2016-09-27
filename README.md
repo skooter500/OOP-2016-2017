@@ -35,7 +35,7 @@ Some assignments from previous years:
 - [Psychedelic Spirals sketch](https://github.com/skooter500/psychedelicSpirals)
 - [Circles explained](https://www.khanacademy.org/math/trigonometry/unit-circle-trig-func/unit-circle-definition-of-trig-functions/v/unit-circle-definition-of-trig-functions-1)
 
-Generative art:
+Some interesting videos about generative art:
 
 [![YouTube](http://img.youtube.com/vi/LaarVR1AOvs/0.jpg)](https://www.youtube.com/watch?v=LaarVR1AOvs)
 
