@@ -45,12 +45,13 @@ Generative art:
 
 ## Learning outcomes
 
-Use variables
-Use for loops
-Use methods
-Construct an algorithm to solve a problem using sin, cos and the unit circle
-Use drawing and colours in a Processing sketch
-Use random numbers
+- Use variables
+- Use for loops
+- Use methods
+- Construct an algorithm to solve a problem using sin, cos and the unit circle
+- Use drawing and colours in a Processing sketch
+- Use random numbers
+- Be creative with code
 
 In the lecture we learned how to make spiral shapes using a for loop with sin and cos. In the lab today you will make a sketch that draws star shapes with random numbers of points and random colours. Here is what the finished sketch could look like:
 
