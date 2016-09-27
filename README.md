@@ -31,14 +31,40 @@ Some assignments from previous years:
 # Week 3
 ## Lecture
 - [Trigonometry problem set](http://www.tippcityschools.com/cms/lib6/OH01000855/Centricity/Domain/111/Acc%20Geom%20eDay%201.pdf)
-- 
+- [Simple Spirals sketch](processing/spiral)
+- [Psychedelic Spirals sketch](https://github.com/skooter500/psychedelicSpirals)
+
+In the lecture we learned how to make spiral shapes using a for loop with sin and cos. In the lab today you will make a sketch that draws star shapes with random numbers of points and random colours. Here is what the finished sketch could look like:
+
+![Sketch](images/p5.png)
+
+Here are some things you might need to read up on first:
+
+- [random function in Processing](https://processing.org/reference/random_.html)
+- [Using the modulus operator](http://www.cafeaulait.org/course/week2/15.html)
+
+You can put all your code into the setup method as this sketch doesn't use any animation (unles you want to attempt the advanced part)
+
+This is how I suggest you think about the problem.
+
+- You will need a for loop that goes from 0 - TWO_PI. There will be twice as many steps as there are points on the star.
+- You can use % (modulus) to decide whether the x and y values you calculate should be the tip of a point or base of the point (the pointy bit or the trough).
+- Use line in your solution
+- I strongly suggest you start the lab by just drawing a single star and then maybe move on to drawing multiple stars using a for loop.
+- You could write a methdod to draw a single star with parameters
+
+### Advanced
+- Make a beautiful animated sketch with stars and spirals and share a picture/video/animated gif on the slack
+- Use sin and cos to control colours
+
+Do the MCQ!
 
 # Week 2
 ## Lecture
 - [Quadrants sketch](processing/quadrants) - How to use the if statement
 - [Rectangle sketch](processing/rectangle) - Rectangle moves back and forth across the screen
 - [Examples of using loops in Processing](processing/loops)
-- [Solution to the BugZap lab](https://github.com/skooter500/BugZap) 
+- [Solution to the BugZap lab](https://github.com/skooter500/BugZap)
 
 # Lab
 ## Learning Outcomes
