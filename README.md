@@ -58,7 +58,7 @@ This is how I suggest you think about the problem.
 - Make a beautiful animated sketch with stars and spirals and share a picture/video/animated gif on the slack
 - Use sin and cos to control colours
 
-Do the MCQ!
+Do MCQ 2 and MCQ 3
 
 # Week 2
 ## Lecture
