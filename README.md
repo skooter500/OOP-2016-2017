@@ -32,6 +32,7 @@ Some assignments from previous years:
 ## Lecture
 - [Trigonometry problem set](http://www.tippcityschools.com/cms/lib6/OH01000855/Centricity/Domain/111/Acc%20Geom%20eDay%201.pdf)
 - [Simple Spirals sketch](processing/spiral)
+- [Trigonometry problem visualised in processing](processing/kitetriangle)
 - [Psychedelic Spirals sketch](https://github.com/skooter500/psychedelicSpirals)
 - [Circles explained](https://www.khanacademy.org/math/trigonometry/unit-circle-trig-func/unit-circle-definition-of-trig-functions/v/unit-circle-definition-of-trig-functions-1)
 
@@ -77,6 +78,8 @@ This is how I suggest you think about the problem.
 - Use sin and cos to control colours
 
 Do MCQ 2 and MCQ 3
+
+- [Solution to the lab](processing\star)
 
 # Week 2
 ## Lecture
