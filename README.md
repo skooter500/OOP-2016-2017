@@ -28,6 +28,61 @@ Some assignments from previous years:
 
 [![YouTube](http://img.youtube.com/vi/S575a92AsuQ/0.jpg)](https://www.youtube.com/watch?v=S575a92AsuQ)
 
+# Week 4
+- [The arrays program we wrote in the class](processing/arrays)
+- [Arrays in Processing reference](https://processing.org/reference/Array.html)
+- A video from last year about arrays in Processing
+
+  [![YouTube](http://img.youtube.com/vi/ccnjXlSnL2Y/0.jpg)](https://www.youtube.com/watch?v=ccnjXlSnL2Y)
+
+## Lab
+
+### Learning outcomes
+- Practice iterating over arrays in Java
+- Practice in using the for loop and variables to generate sequences of numbers
+- Understand how a line graph is made
+- Practice constructing alogorithms as part of a system
+- Practice presenting data visually
+
+Log into the slack and let me know how you are getting on today!
+
+Use the code you wrote yesterday in the class as starter code for today's lab.
+If you missed the class, [this is a link to my version](processing/arrays).
+
+Here is what you can try and make today:
+
+![Sketch](images/p7.png)
+
+These are the steps I suggest you follow:
+
+- Figure out how to draw a trend line graph first
+- Then figure out how to leave horizontal and vertical borders around the graph. I would suggest making a variable called border to control this.
+- Then figure out how to scale it so that it scales the data when drawing to the range 0-150. You could make this a variable
+- Then figure out how to draw the horizontal axis. This will be a for loop obviously. You might find the following Java/Processing methods useful:
+  - [The Processing map method](https://processing.org/reference/map_.html)
+  - [textAlign](https://processing.org/reference/textAlign_.html)
+  - [substring](http://www.tutorialspoint.com/java/java_string_substring.htm)
+- Finally figure out how to draw the vertical axis. Another loop! This is the trickiest part I think
+
+Try and parameterise as much of your sketch with variables, so that you could reuse the code to graph other types of data.
+For example, I found it useful to write a method:
+
+```Java
+void drawAxis(float[] data, String[] horizLabels, int verticalIntervals, int maxVertical, float border)
+```
+
+to draw the horizontal and vertical axes. You might like to write seperate methods for the horizontal and vertical axis.
+This took me about an hour to complete today, so it's tricky enough to get everything working, but worth it!
+Take a screenshot of your sketch and [upload it to the slack](http://dt228-oop-2015.slack.com)!
+
+### Advanced!
+
+Try and draw this pie chart:
+
+![Sketch](images/p8.png)
+
+Upload screenshots of your sketches to Slack and log on to webcourses to do today's MCQ.
+
 # Week 3
 ## Lecture
 - [Trigonometry problem set](http://www.tippcityschools.com/cms/lib6/OH01000855/Centricity/Domain/111/Acc%20Geom%20eDay%201.pdf)
@@ -81,12 +136,19 @@ Do MCQ 2 and MCQ 3
 
 - [Solution to the lab](processing\star)
 
+## Tutorial
+- [My generartive art project](https://github.com/skooter500/genart1)
+
 # Week 2
 ## Lecture
 - [Quadrants sketch](processing/quadrants) - How to use the if statement
 - [Rectangle sketch](processing/rectangle) - Rectangle moves back and forth across the screen
 - [Examples of using loops in Processing](processing/loops)
 - [Solution to the BugZap lab](https://github.com/skooter500/BugZap)
+
+* Data types, the if statement and dynamic sketches in Processing video (from last year)
+
+  [![YouTube](http://img.youtube.com/vi/Y0b9W3UJ2BU/0.jpg)](https://www.youtube.com/watch?v=Y0b9W3UJ2BU)
 
 # Lab
 ## Learning Outcomes
