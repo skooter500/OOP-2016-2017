@@ -28,12 +28,37 @@ Some assignments from previous years:
 
 [![YouTube](http://img.youtube.com/vi/S575a92AsuQ/0.jpg)](https://www.youtube.com/watch?v=S575a92AsuQ)
 
+# Week 5
+
+- Stephen Hawkings on the Game of Life:
+
+  [![YouTube](http://img.youtube.com/vi/CgOcEZinQ2I/0.jpg)](https://www.youtube.com/watch?v=CgOcEZinQ2I)
+
+- John Conway on the Game of Life:
+
+  [![YouTube](http://img.youtube.com/vi/C2vgICfQawE/0.jpg)](https://www.youtube.com/watch?v=C2vgICfQawE)
+
+- Epic Conway's Game of Life:
+
+  [![YouTube](http://img.youtube.com/vi/FdMzngWchDk/0.jpg)](https://www.youtube.com/watch?v=FdMzngWchDk)
+
+- And finally, Alan Watts
+
+  [![YouTube](http://img.youtube.com/vi/wU0PYcCsL6o/0.jpg)](https://www.youtube.com/watch?v=wU0PYcCsL6o)
+
+- [Conway's Game of Life on Wikipedia](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+- [The Game of Life Wiki](http://www.conwaylife.com/wiki/Main_Page)
+
 # Week 4
 - [The arrays program we wrote in the class](processing/arrays)
 - [Arrays in Processing reference](https://processing.org/reference/Array.html)
 - A video from last year about arrays in Processing
 
   [![YouTube](http://img.youtube.com/vi/ccnjXlSnL2Y/0.jpg)](https://www.youtube.com/watch?v=ccnjXlSnL2Y)
+
+- Making the trend line:
+
+  [![YouTube](http://img.youtube.com/vi/K9R5yQCPXIE/0.jpg)](https://www.youtube.com/watch?v=K9R5yQCPXIE)
 
 ## Lab
 
@@ -82,6 +107,8 @@ Try and draw this pie chart:
 ![Sketch](images/p8.png)
 
 Upload screenshots of your sketches to Slack and log on to webcourses to do today's MCQ.
+
+- [Solution to the lab](processing/data)
 
 # Week 3
 ## Lecture
