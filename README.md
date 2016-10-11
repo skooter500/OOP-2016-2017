@@ -78,7 +78,7 @@ Here is a video of what my sketch looks like:
 
 [![YouTube](http://img.youtube.com/vi/72X38iT74As/0.jpg)](https://www.youtube.com/watch?v=72X38iT74As)
 
-Please share your work on the class slack!
+Please share your work on the class slack and don't forget to do the MCQ this week.
 
 
 # Week 4
