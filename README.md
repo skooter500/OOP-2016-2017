@@ -28,6 +28,18 @@ Some assignments from previous years:
 
 [![YouTube](http://img.youtube.com/vi/S575a92AsuQ/0.jpg)](https://www.youtube.com/watch?v=S575a92AsuQ)
 
+# Assessments
+
+- 1 November 2016 lab test 14%
+- 29 November 2016 Assignment 1 submission 20%
+- 31 January 2017  Assignment 2 submission - 20%
+- Assignment 3 - 30%
+- MCQ's - 16%
+
+# Week 6
+- [Irish economic data lab test from 2015](https://github.com/skooter500/irishEconomy/)
+- [Politicians expenses lab test from 2014](https://github.com/skooter500/DT228-OOP/tree/master/Processing%20Examples/ExpensesProcessing)
+
 # Week 5
 - [Incomplete Game of Life code for the lab today](processing/lifeIncomplete)
 
@@ -80,6 +92,8 @@ Here is a video of what my sketch looks like:
 
 Please share your work on the class slack and don't forget to do the MCQ this week.
 
+- [A solution](processing/Life)
+- [A solution that uses classes](processing/ProcessingLife)
 
 # Week 4
 - [The arrays program we wrote in the class](processing/arrays)

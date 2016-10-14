@@ -58,7 +58,7 @@ int countLiveCells(int r, int c)
   int count = 0;
   for(int row = r - 1 ;row <= r+1 ; row ++)
   {
-    for(int col = c - 1 ; col <= c + 1 ; col ++)
+    for(int col = c - 1 ; col <= c+1 ; col ++)
     {
       if ((! (row == r && col == c)) && getCell(row, col))
       {
