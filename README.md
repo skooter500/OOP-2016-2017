@@ -48,6 +48,7 @@ Some assignments from previous years:
 
 [![YouTube](http://img.youtube.com/vi/ccnjXlSnL2Y/0.jpg)](https://www.youtube.com/watch?v=ccnjXlSnL2Y)
 
+- [The expenses program we wrote in class](processing\expenses)
 
 
 # Week 5
