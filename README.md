@@ -40,6 +40,16 @@ Some assignments from previous years:
 - [Irish economic data lab test from 2015](https://github.com/skooter500/irishEconomy/)
 - [Politicians expenses lab test from 2014](https://github.com/skooter500/DT228-OOP/tree/master/Processing%20Examples/ExpensesProcessing)
 
+- Video about map, ArrayList's, splitting strings, converting String to float:
+
+[![YouTube](http://img.youtube.com/vi/jMC_y9Nhq04/0.jpg)](https://www.youtube.com/watch?v=jMC_y9Nhq04)
+
+- Datasets in processing video:
+
+[![YouTube](http://img.youtube.com/vi/ccnjXlSnL2Y/0.jpg)](https://www.youtube.com/watch?v=ccnjXlSnL2Y)
+
+
+
 # Week 5
 - [Incomplete Game of Life code for the lab today](processing/lifeIncomplete)
 
@@ -98,6 +108,11 @@ Please share your work on the class slack and don't forget to do the MCQ this we
 # Week 4
 - [The arrays program we wrote in the class](processing/arrays)
 - [Arrays in Processing reference](https://processing.org/reference/Array.html)
+
+- Arrays in processing - the basics
+
+[![YouTube](http://img.youtube.com/vi/cMWxN4j30A0/0.jpg)](https://www.youtube.com/watch?v=cMWxN4j30A0)
+
 - A video from last year about arrays in Processing
 
   [![YouTube](http://img.youtube.com/vi/ccnjXlSnL2Y/0.jpg)](https://www.youtube.com/watch?v=ccnjXlSnL2Y)
@@ -105,6 +120,7 @@ Please share your work on the class slack and don't forget to do the MCQ this we
 - Making the trend line:
 
   [![YouTube](http://img.youtube.com/vi/K9R5yQCPXIE/0.jpg)](https://www.youtube.com/watch?v=K9R5yQCPXIE)
+
 
 ## Lab
 

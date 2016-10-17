@@ -9,6 +9,37 @@
 
 boolean paused = false;
 
+
+boolean getCell(int row, int col)
+{
+   if (row < 0 || row >= boardHeight || col < 0 || col >= boardWidth)
+   {
+     return false;
+   }
+   else
+   {
+     return board[row][col];
+   }
+}
+
+// Counting neighbours with a loop
+int countNeighboursWithLoop(int row, int col)
+{
+  int count = 0;
+  for (int r = row - 1 ; r <= row + 1 ; r ++)
+  {
+    for (int c = col - 1 ; c <= col + 1 ; c ++)
+    {
+      if ((!(r == row && c == col)) && getCell(r,c))
+      {
+        count ++;
+      }      
+    }
+  }
+  return count;
+}
+
+// Counting neighbours with if statements
 int countNeighbours(int row, int col)
 {
   int count = 0;
@@ -59,22 +90,39 @@ int countNeighbours(int row, int col)
   return count;
 }
 
+void startShape()
+{
+  for (int col = 0; col < boardWidth ; col ++)
+  {
+    board[20][col] = true;
+    board[30][col] = true;
+  }
+}
+
 void setup()
 {
-  size(500, 500);
-  boardWidth = width / cellWidth;
-  boardHeight = height / cellHeight;
+  size(1000, 1000, P2D);
+  cellWidth = width / (float) boardWidth;
+  cellHeight = height / (float) boardHeight;
   board = new boolean[boardHeight][boardWidth];
   next = new boolean[boardHeight][boardWidth];
-  randomise(); 
+  //randomise(); 
+  startShape();
+  
+  filledColor = color(random(200, 255), random(200, 255), random(0, 50));
+  backColor = color(random(0, 100), random(20, 50), random(0, 50));
+  
+      targetFilledColor = color(random(200, 255), random(200, 255), random(0, 50));
+    targetBackColor = color(random(0, 100), random(20, 50), random(0, 50));
+
 }
 
 boolean[][] board;
 boolean[][] next;
-int cellWidth = 5;
-int cellHeight = 5;
-int boardWidth;
-int boardHeight;
+float cellWidth;
+float cellHeight;
+int boardWidth = 50;
+int boardHeight = 50;
 color c = color(0, 0, 0);
 
 void randomise()
@@ -106,7 +154,10 @@ void update()
     {
       for (int col = 0 ; col < boardWidth ; col ++)
       {
-        int count = countNeighbours(row, col);
+        int count = countNeighboursWithLoop(row, col);
+        /*int count1 = countNeighboursWithLoop(row, col);
+        println(count + "\t" + count1);
+        */
         next[row][col] = false;
         if (board[row][col])
         {
@@ -138,26 +189,72 @@ void update()
   }  
 }
 
+float fps = 2;
+int frames = (int) ((1.0f / fps) * 60.0f);
+float t = 0.0f;
+float tInc = 1.0f / frames;
+color filledColor;
+color backColor;
+
+color targetFilledColor;
+color targetBackColor;
+
 void draw()
 {
   background(c);
   
-  update();
-  for (int row = 0 ; row < boardHeight ; row ++)
+  if (frameCount % 240 == 0)
   {
-    for (int col = 0 ; col < boardWidth ; col ++)
+    targetFilledColor = color(random(200, 255), random(200, 255), random(0, 50));
+    targetBackColor = color(random(0, 100), random(20, 50), random(0, 50));
+  }
+  
+  filledColor = lerpColor(filledColor, targetFilledColor, 0.05f);
+  backColor = lerpColor(backColor, targetBackColor, 0.05f);
+  
+  if (! paused)
+  {
+    if (frameCount % frames == 0)
     {
-      int x = cellWidth * col;
-      int y = cellHeight * row;
-      if (board[row][col])
-       {
-         fill(0, 255, 0);         
-       } 
-       else
-       {
-         fill(0);         
-       }
-       rect(x, y, cellWidth, cellHeight);
+      update();
+      t = 0;
+      noStroke();
     }
+    for (int row = 0 ; row < boardHeight ; row ++)
+    {
+      for (int col = 0 ; col < boardWidth ; col ++)
+      {
+        float x = cellWidth * col;
+        float y = cellHeight * row;
+        
+        color lerpedColor;
+        //rect(x, y, cellWidth, cellHeight);
+        if (board[row][col])
+         {
+           if (!next[row][col])
+           {
+             lerpedColor = lerpColor(backColor, filledColor, t);
+           }
+           else
+           {
+             lerpedColor = filledColor;
+           }                         
+         } 
+         else
+         {
+            if (next[row][col])
+           {
+             lerpedColor = lerpColor(filledColor, backColor, t);
+           }
+           else
+           {
+             lerpedColor = backColor;
+           } 
+         }
+         fill(lerpedColor);
+         ellipse(x + cellWidth / 2, y + cellHeight / 2, cellWidth-1, cellHeight-1);
+      }          
+    } 
+    t += tInc;
   }
 }
