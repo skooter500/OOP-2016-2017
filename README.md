@@ -50,6 +50,21 @@ Some assignments from previous years:
 
 - [The expenses program we wrote in class](processing\expenses)
 
+## Lab
+
+### Learning Outcomes
+- Create classes & objects
+- Practice using an ArrayList
+- Get experience loading data from a file
+- Practice useful stuff for the upcoming lab test
+
+Here is [the lab test document](docs/Lab Test 1.docx). You can attempt the entire test but dont worry if you can't figure out the party expenses part. What would be good to get done today would be the following:
+
+- Create an ArrayList for Expense objects. Here is the [Processing reference for the ArrayList](https://processing.org/reference/ArrayList.html). Also [here is the example we wrote in the class today](processing/expenses).
+- Load the expense data from the file into the ArrayList of Expense objects. You can use the processing method [loadTable](https://processing.org/reference/loadTable_.html) to do this. *Read the processing reference page for this carefully!!*
+- Draw a barchart of the barchart of Expense objects.
+
+Share your work on the Slack! Do the MCQ
 
 # Week 5
 - [Incomplete Game of Life code for the lab today](processing/lifeIncomplete)
