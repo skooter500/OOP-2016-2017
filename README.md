@@ -39,10 +39,9 @@ Some assignments from previous years:
 # Week 7
 - [Hashmaps in Processing](https://processing.org/reference/HashMap.html)
 - [Iterating over a HashMap](http://stackoverflow.com/questions/1066589/iterate-through-a-hashmap)
-- All about git!
+- All about git
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/p_PGUltnB6w" frameborder="0" allowfullscreen></iframe>
-
+[![YouTube](http://img.youtube.com/vi/p_PGUltnB6w/0.jpg)](https://www.youtube.com/watch?v=p_PGUltnB6w)
 
 # Week 6
 - [Irish economic data lab test from 2015](https://github.com/skooter500/irishEconomy/)
