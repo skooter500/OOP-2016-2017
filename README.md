@@ -31,7 +31,7 @@ Some assignments from previous years:
 # Week 3
 ## Lecture
 - [Trigonometry problem set](http://www.tippcityschools.com/cms/lib6/OH01000855/Centricity/Domain/111/Acc%20Geom%20eDay%201.pdf)
-- 
+- [Spirit Guide](processing/spiritGuide)
 
 # Week 2
 ## Lecture
@@ -39,6 +39,7 @@ Some assignments from previous years:
 - [Rectangle sketch](processing/rectangle) - Rectangle moves back and forth across the screen
 - [Examples of using loops in Processing](processing/loops)
 - [Solution to the BugZap lab](https://github.com/skooter500/BugZap) 
+- [Dublin Flag sketch](processing/dublinflag)
 
 # Lab
 ## Learning Outcomes
