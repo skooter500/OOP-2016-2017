@@ -28,18 +28,240 @@ Some assignments from previous years:
 
 [![YouTube](http://img.youtube.com/vi/S575a92AsuQ/0.jpg)](https://www.youtube.com/watch?v=S575a92AsuQ)
 
+# Assessments
+
+- 8 November 2016 lab test 14%
+- 29 November 2016 Assignment 1 submission 20%
+- 31 January 2017  Assignment 2 submission - 20%
+- Assignment 3 - 30%
+- MCQ's - 16%
+
+# Week 7
+- [Hashmaps in Processing](https://processing.org/reference/HashMap.html)
+- [Iterating over a HashMap](http://stackoverflow.com/questions/1066589/iterate-through-a-hashmap)
+- All about git!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/p_PGUltnB6w" frameborder="0" allowfullscreen></iframe>
+
+
+# Week 6
+- [Irish economic data lab test from 2015](https://github.com/skooter500/irishEconomy/)
+- [Politicians expenses lab test from 2014](processing/ExpensesProcessing)
+
+- Video about map, ArrayList's, splitting strings, converting String to float:
+
+[![YouTube](http://img.youtube.com/vi/jMC_y9Nhq04/0.jpg)](https://www.youtube.com/watch?v=jMC_y9Nhq04)
+
+- Datasets in processing video:
+
+[![YouTube](http://img.youtube.com/vi/ccnjXlSnL2Y/0.jpg)](https://www.youtube.com/watch?v=ccnjXlSnL2Y)
+
+- [The expenses program we wrote in class](processing\expenses)
+
+## Lab
+
+### Learning Outcomes
+- Create classes & objects
+- Practice using an ArrayList
+- Get experience loading data from a file
+- Practice useful stuff for the upcoming lab test
+
+Here is [the lab test document](docs/Lab Test 1.docx). You can attempt the entire test but dont worry if you can't figure out the party expenses part. What would be good to get done today would be the following:
+
+- Create an ArrayList for Expense objects. Here is the [Processing reference for the ArrayList](https://processing.org/reference/ArrayList.html). Also [here is the example we wrote in the class today](processing/expenses).
+- Load the expense data from the file into the ArrayList of Expense objects. You can use the processing method [loadTable](https://processing.org/reference/loadTable_.html) to do this. *Read the processing reference page for this carefully!!*
+- Draw a barchart of the barchart of Expense objects.
+
+Share your work on the Slack! Do the MCQ
+
+# Week 5
+- [Incomplete Game of Life code for the lab today](processing/lifeIncomplete)
+
+- Stephen Hawkings on the Game of Life:
+
+  [![YouTube](http://img.youtube.com/vi/CgOcEZinQ2I/0.jpg)](https://www.youtube.com/watch?v=CgOcEZinQ2I)
+
+- John Conway on the Game of Life:
+
+  [![YouTube](http://img.youtube.com/vi/C2vgICfQawE/0.jpg)](https://www.youtube.com/watch?v=C2vgICfQawE)
+
+- Epic Conway's Game of Life:
+
+  [![YouTube](http://img.youtube.com/vi/FdMzngWchDk/0.jpg)](https://www.youtube.com/watch?v=FdMzngWchDk)
+
+- And finally, Alan Watts
+
+  [![YouTube](http://img.youtube.com/vi/wU0PYcCsL6o/0.jpg)](https://www.youtube.com/watch?v=wU0PYcCsL6o)
+
+- [Conway's Game of Life on Wikipedia](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+- [The Game of Life Wiki](http://www.conwaylife.com/wiki/Main_Page)
+
+## Lab
+### Learning Outcomes
+- Complete the game of life code
+- Practice iterating over a 2D array
+- Discover the amazing power of cellular automata
+
+Try and complete the Game of Life we started in the class today. Here is the [code from the class](processing/lifeIncomplete).  you weren't in the class, you could take a read of the Game of Life wiki page and have a crack at implementing it from scratch yourselves. It's not too difficult. If you get your basic game of life to evolve, you could try these additions:
+
+- The method ```void mousePressed()``` gets called in your sketch whenever the mouse is pressed. The method ```mouseDragged``` gets called whenever you hold the mouse down and move it over your sketch. You can get the mouse x and y coordinates by using the built in variables ```mouseX``` and ```mouseY```. You can use these methods to implement mouse drawing. To do this you need to calculate which row and column in the 2D array the mouse is over and then set this cell to be true.
+
+- When you press the space key, the game should pause and unmpause, in other words, not update the game board while the game is paused
+- When you press the c key, the board should clear. In otherwords, you should set every element in th 2D array to be false.
+- When you press the r key, you should randomly set 50% of the elements to be true. To do this, you need to iterate through the array and generate a random number between 0.0f and 1.0f. If the number is > 0.5f, you set the element to be true otherwise set it to be false.
+
+There some interesting starting patterns you can program also. You could write code so that when you press a number key it creates the starting pattern at the mouse x and y. I used the mouse x and y to be the top left of the shape.
+
+| Pattern | Description |
+|---------|-------------|
+|![Sketch](images/p13.png) | Gosper Gun |
+|![Sketch](images/p14.png) | Lightweight spaceship |
+|![Sketch](images/p15.png) | Tumbler |
+|![Sketch](images/p16.png) | Glider |
+|![Sketch](images/p17.png) | I'm not sure what this is called, but it makes amazing patterns |
+
+Here is a video of what my sketch looks like:
+
+[![YouTube](http://img.youtube.com/vi/72X38iT74As/0.jpg)](https://www.youtube.com/watch?v=72X38iT74As)
+
+Please share your work on the class slack and don't forget to do the MCQ this week.
+
+- [A solution](processing/Life)
+- [A solution that uses classes](processing/ProcessingLife)
+
+# Week 4
+- [The arrays program we wrote in the class](processing/arrays)
+- [Arrays in Processing reference](https://processing.org/reference/Array.html)
+
+- Arrays in processing - the basics
+
+[![YouTube](http://img.youtube.com/vi/cMWxN4j30A0/0.jpg)](https://www.youtube.com/watch?v=cMWxN4j30A0)
+
+- A video from last year about arrays in Processing
+
+  [![YouTube](http://img.youtube.com/vi/ccnjXlSnL2Y/0.jpg)](https://www.youtube.com/watch?v=ccnjXlSnL2Y)
+
+- Making the trend line:
+
+  [![YouTube](http://img.youtube.com/vi/K9R5yQCPXIE/0.jpg)](https://www.youtube.com/watch?v=K9R5yQCPXIE)
+
+
+## Lab
+
+### Learning outcomes
+- Practice iterating over arrays in Java
+- Practice in using the for loop and variables to generate sequences of numbers
+- Understand how a line graph is made
+- Practice constructing alogorithms as part of a system
+- Practice presenting data visually
+
+Log into the slack and let me know how you are getting on today!
+
+Use the code you wrote yesterday in the class as starter code for today's lab.
+If you missed the class, [this is a link to my version](processing/arrays).
+
+Here is what you can try and make today:
+
+![Sketch](images/p7.png)
+
+These are the steps I suggest you follow:
+
+- Figure out how to draw a trend line graph first
+- Then figure out how to leave horizontal and vertical borders around the graph. I would suggest making a variable called border to control this.
+- Then figure out how to scale it so that it scales the data when drawing to the range 0-150. You could make this a variable
+- Then figure out how to draw the horizontal axis. This will be a for loop obviously. You might find the following Java/Processing methods useful:
+  - [The Processing map method](https://processing.org/reference/map_.html)
+  - [textAlign](https://processing.org/reference/textAlign_.html)
+  - [substring](http://www.tutorialspoint.com/java/java_string_substring.htm)
+- Finally figure out how to draw the vertical axis. Another loop! This is the trickiest part I think
+
+Try and parameterise as much of your sketch with variables, so that you could reuse the code to graph other types of data.
+For example, I found it useful to write a method:
+
+```Java
+void drawAxis(float[] data, String[] horizLabels, int verticalIntervals, int maxVertical, float border)
+```
+
+to draw the horizontal and vertical axes. You might like to write seperate methods for the horizontal and vertical axis.
+This took me about an hour to complete today, so it's tricky enough to get everything working, but worth it!
+Take a screenshot of your sketch and [upload it to the slack](http://dt228-oop-2015.slack.com)!
+
+### Advanced!
+
+Try and draw this pie chart:
+
+![Sketch](images/p8.png)
+
+Upload screenshots of your sketches to Slack and log on to webcourses to do today's MCQ.
+
+- [Solution to the lab](processing/data)
+
 # Week 3
 ## Lecture
 - [Trigonometry problem set](http://www.tippcityschools.com/cms/lib6/OH01000855/Centricity/Domain/111/Acc%20Geom%20eDay%201.pdf)
-- [Spirit Guide](processing/spiritGuide)
+- [Simple Spirals sketch](processing/spiral)
+- [Trigonometry problem visualised in processing](processing/kitetriangle)
+- [Psychedelic Spirals sketch](https://github.com/skooter500/psychedelicSpirals)
+- [Circles explained](https://www.khanacademy.org/math/trigonometry/unit-circle-trig-func/unit-circle-definition-of-trig-functions/v/unit-circle-definition-of-trig-functions-1)
+
+Some interesting videos about generative art:
+
+[![YouTube](http://img.youtube.com/vi/LaarVR1AOvs/0.jpg)](https://www.youtube.com/watch?v=LaarVR1AOvs)
+
+[![YouTube](http://img.youtube.com/vi/x0OK1GiI83s/0.jpg)](https://www.youtube.com/watch?v=x0OK1GiI83s)
+
+# Lab
+
+## Learning outcomes
+
+- Use variables
+- Use for loops
+- Use methods
+- Construct an algorithm to solve a problem using sin, cos and the unit circle
+- Use drawing and colours in a Processing sketch
+- Use random numbers
+- Be creative with code
+
+In the lecture we learned how to make spiral shapes using a for loop with sin and cos. In the lab today you will make a sketch that draws star shapes with random numbers of points and random colours. Here is what the finished sketch could look like:
+
+![Sketch](images/p5.png)
+
+Here are some things you might need to read up on first:
+
+- [random function in Processing](https://processing.org/reference/random_.html)
+- [Using the modulus operator](http://www.cafeaulait.org/course/week2/15.html)
+
+You can put all your code into the setup method as this sketch doesn't use any animation (unles you want to attempt the advanced part)
+
+This is how I suggest you think about the problem.
+
+- You will need a for loop that goes from 0 - TWO_PI. There will be twice as many steps as there are points on the star.
+- You can use % (modulus) to decide whether the x and y values you calculate should be the tip of a point or base of the point (the pointy bit or the trough).
+- Use line in your solution
+- I strongly suggest you start the lab by just drawing a single star and then maybe move on to drawing multiple stars using a for loop.
+- You could write a methdod to draw a single star with parameters
+
+### Advanced
+- Make a beautiful animated sketch with stars and spirals and share a picture/video/animated gif on the slack
+- Use sin and cos to control colours
+
+Do MCQ 2 and MCQ 3
+
+- [Solution to the lab](processing\star)
+
+## Tutorial
+- [My generartive art project](https://github.com/skooter500/genart1)
 
 # Week 2
 ## Lecture
 - [Quadrants sketch](processing/quadrants) - How to use the if statement
 - [Rectangle sketch](processing/rectangle) - Rectangle moves back and forth across the screen
 - [Examples of using loops in Processing](processing/loops)
-- [Solution to the BugZap lab](https://github.com/skooter500/BugZap) 
-- [Dublin Flag sketch](processing/dublinflag)
+- [Solution to the BugZap lab](https://github.com/skooter500/BugZap)
+
+* Data types, the if statement and dynamic sketches in Processing video (from last year)
+
+  [![YouTube](http://img.youtube.com/vi/Y0b9W3UJ2BU/0.jpg)](https://www.youtube.com/watch?v=Y0b9W3UJ2BU)
 
 # Lab
 ## Learning Outcomes
