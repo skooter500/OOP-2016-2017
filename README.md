@@ -38,6 +38,14 @@ Some assignments from previous years:
 - Assignment 3 - 30%
 - MCQ's - 16%
 
+
+# Week 8
+- [Lab test 2](https://github.com/skooter500/irishEconomy/)
+- [Radar example implemented using various techniques](processing/RadarExample)
+- [Detecting multiple key presses in Processing](processing/multipleKeys)
+- [Timers](processing\timers)
+- [Formatting numbers](processing/decimalFormat)
+
 # Week 7
 - [Hashmaps in Processing](https://processing.org/reference/HashMap.html)
 - [Iterating over a HashMap](http://stackoverflow.com/questions/1066589/iterate-through-a-hashmap)
