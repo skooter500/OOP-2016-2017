@@ -30,7 +30,7 @@ Some assignments from previous years:
 
 # Assessments
 
-- [Assignments](processing/assignments.md)
+- [Assignments](assignments.md)
 
 - 8 November 2016 lab test 14%
 - 29 November 2016 Assignment 1 submission 20%
