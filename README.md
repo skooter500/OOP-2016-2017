@@ -38,6 +38,14 @@ Some assignments from previous years:
 - Assignment 3 - 30%
 - MCQ's - 16%
 
+# Week 9
+- [The map method example from Tuesday's class](processing/mapExample)
+- [YASC Work in progress](processing/YASC1)
+- [YASC on github](http://github.com/skooter500/YASC)
+
+# Lab
+- [Lab Test 1](https://github.com/skooter500/OOP-LabTest1-2016)
+
 
 # Week 8
 - [Lab test 2](https://github.com/skooter500/irishEconomy/)
