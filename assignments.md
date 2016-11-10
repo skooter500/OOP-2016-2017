@@ -12,13 +12,13 @@ Use Processing to create a UI for a sci-fi movie device like a warp drive, engin
 
 You can take inspiration from sci-fi movies that you like, such as these ones:
 
-![Sketch](../images/ui1.png)
+![Sketch](images/ui1.png)
 
-![Sketch](../images/ui2.png)
+![Sketch](images/ui2.png)
 
-![Sketch](../images/ui3.png)
+![Sketch](images/ui3.png)
 
-![Sketch](../images/ui4.png)
+![Sketch](images/ui4.png)
 
 Marking Scheme
 
