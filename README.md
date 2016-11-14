@@ -38,6 +38,14 @@ Some assignments from previous years:
 - Assignment 3 - 30%
 - MCQ's - 16%
 
+# Week 10
+- [Get YASC on Itch](https://skooter500.itch.io/yasc)
+- [Get NILL (another game I made in Processing) on Itch](https://skooter500.itch.io/NILL)
+- [pushMatrix, popMatrix, translate & rotate example from the class](processing/YASC2)
+
+[![YouTube](http://img.youtube.com/vi/XwniJyTIdec/0.jpg)](https://www.youtube.com/watch?v=XwniJyTIdec)
+
+
 # Week 9
 - [The map method example from Tuesday's class](processing/mapExample)
 - [YASC Work in progress](processing/YASC1)
