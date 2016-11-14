@@ -53,6 +53,7 @@ Some assignments from previous years:
 
 # Lab
 - [Lab Test 1](https://github.com/skooter500/OOP-LabTest1-2016)
+- [SOlution](https://github.com/skooter500/StarMap)
 
 
 # Week 8

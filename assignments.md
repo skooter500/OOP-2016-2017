@@ -2,6 +2,7 @@
 
 ## Assignment 1 - Due 29 November 2016
 
+
 Use Processing to create a UI for a sci-fi movie device like a warp drive, engines, weapons system. You can base it on any movie you like or come up with your own. It should be kinda usable. It should have lots of animation & interactivity and look amazing. It can be as far out as you like. In other words it can be for an alien. You sould use all the stuff you are learning on the course:
 
 - Variables, loops, methods
@@ -12,13 +13,13 @@ Use Processing to create a UI for a sci-fi movie device like a warp drive, engin
 
 You can take inspiration from sci-fi movies that you like, such as these ones:
 
-![Sketch](../images/ui1.png)
+![Sketch](images/ui1.png)
 
-![Sketch](../images/ui2.png)
+![Sketch](images/ui2.png)
 
-![Sketch](../images/ui3.png)
+![Sketch](images/ui3.png)
 
-![Sketch](../images/ui4.png)
+![Sketch](images/ui4.png)
 
 Marking Scheme
 
