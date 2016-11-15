@@ -60,7 +60,9 @@ Daniel Shiffman's introduction to PVectors:
 Modify the code we worked on on the class on Monday so that the ship moves with realistic physics. You should use PVectors in your solution. The three equations you need to implement are:
 
 A = F / m
+
 V = V + A * t
+
 P = P + A * t
 
 Where A = Acceleration, V = Velocity, P = Position, t = time 
