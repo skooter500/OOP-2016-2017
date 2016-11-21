@@ -21,9 +21,11 @@ You can take inspiration from sci-fi movies that you like, such as these ones:
 
 ![Sketch](images/ui4.png)
 
-Marking Scheme
+Also! You should include a readme.md file and embed a youtube video demo of your assignment in the readme file.
 
-Complexity: 30% UI:30% Jazz: 20% Use of git: 20%
+Marking Scheme:
+
+Complexity: 25% UI:25% Jazz: 20% Use of git: 20% Documentation: 10%
 
 | Grade | Description |
 | ------|-------------|

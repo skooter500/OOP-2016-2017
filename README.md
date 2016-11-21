@@ -43,6 +43,7 @@ Some assignments from previous years:
 - [Get NILL (another game I made in Processing) on Itch](https://skooter500.itch.io/NILL)
 - [pushMatrix, popMatrix, translate & rotate example from the class](processing/YASC2)
 - [PVectors from the Processing reference](https://www.processing.org/tutorials/pvector/)
+- [The particle system from Friday's tutorial class](https://github.com/skooter500/StarParticles) 
 
 Using PVectors:
 
