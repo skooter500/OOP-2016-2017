@@ -44,6 +44,7 @@ Some assignments from previous years:
 - [pushMatrix, popMatrix, translate & rotate example from the class](processing/YASC2)
 - [PVectors from the Processing reference](https://www.processing.org/tutorials/pvector/)
 - [The particle system from Friday's tutorial class](https://github.com/skooter500/StarParticles) 
+- [YASC3 with Physics](processing/YASC3)
 
 Using PVectors:
 
