@@ -38,6 +38,9 @@ Some assignments from previous years:
 - Assignment 3 - 30%
 - MCQ's - 16%
 
+# Week 11
+- [YASC Work in Progress (with bullets)](processing/YASC3)
+
 # Week 10
 - [Get YASC on Itch](https://skooter500.itch.io/yasc)
 - [Get NILL (another game I made in Processing) on Itch](https://skooter500.itch.io/NILL)

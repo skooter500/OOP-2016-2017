@@ -5,7 +5,10 @@ void setup()
 }
 
 Player player;
+ArrayList<Bullet> bullets = new ArrayList<Bullet>();
 boolean[] keys = new boolean[1000];
+
+float timeDelta = 1.0f / 60.0f;
 
 void keyPressed()
 { 
@@ -32,5 +35,11 @@ void draw()
   stroke(255);
   player.update();
   player.render();
+  
+  for(Bullet b:bullets)
+  {
+    b.update();
+    b.render();
+  }
   
 }

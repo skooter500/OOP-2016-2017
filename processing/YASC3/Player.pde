@@ -68,7 +68,7 @@ class Player
   
   PVector force;
   float power = 100;
-  float timeDelta = 1.0f / 60.0f;
+  
   
   void update()
   {
@@ -91,6 +91,13 @@ class Player
     {
       theta += 0.1f;
     }
+    
+    if (checkKey(' '))
+    {
+      Bullet b = new Bullet(pos.x, pos.y, theta, 20, 5);
+      bullets.add(b);
+    }
+    
     accel = PVector.div(force, mass);
     velocity.add(PVector.mult(accel, timeDelta));
     pos.add(PVector.mult(velocity, timeDelta));
