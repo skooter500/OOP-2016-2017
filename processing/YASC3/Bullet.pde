@@ -4,7 +4,7 @@ class Bullet
   PVector forward;
   float theta;
   float size;
-  float speed = 50;
+  float speed = 200;
   float timeToLive;
   float alive;
   
@@ -15,6 +15,7 @@ class Bullet
     this.theta = theta;
     this.size = size;
     this.timeToLive = timeToLive;    
+    this.alive = 0;
   }
   
   void render()
@@ -30,7 +31,28 @@ class Bullet
   {
     forward.x = sin(theta);
     forward.y = - cos(theta);
+    
     pos.add(PVector.mult(PVector.mult(forward, speed), timeDelta));
-  }
-  
+    if (pos.x > width)
+    {
+      pos.x = 0;
+    }
+    if (pos.x < 0)
+    {
+      pos.x = width;
+    }
+    if (pos.y > height)
+    {
+      pos.y = 0;
+    }
+    if (pos.y < 0)
+    {
+      pos.y = height;
+    }
+    alive += timeDelta;
+    if (alive > timeToLive)
+    {
+      bullets.remove(this);
+    }
+  }  
 }

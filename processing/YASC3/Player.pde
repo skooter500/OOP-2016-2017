@@ -10,6 +10,9 @@ class Player
   float mass = 1;
   PShape shape;
   
+  // Make different keys control the ship!
+  
+  
   Player(float x, float y, float theta, float size)
   {
     pos = new PVector(x, y);
@@ -69,6 +72,9 @@ class Player
   PVector force;
   float power = 100;
   
+  float fireRate = 2;
+  float toPass = 1.0 / fireRate;
+  float elapsed = toPass;
   
   void update()
   {
@@ -83,7 +89,7 @@ class Player
     {
       force.add(PVector.mult(forward, -power));      
     }
-    if (checkKey('a'))
+    if (checkKey('a'))  
     {
       theta -= 0.1f;
     }
@@ -92,10 +98,12 @@ class Player
       theta += 0.1f;
     }
     
-    if (checkKey(' '))
+    if (checkKey(' ') && elapsed > toPass)
     {
-      Bullet b = new Bullet(pos.x, pos.y, theta, 20, 5);
+      PVector bp = PVector.add(pos, PVector.mult(forward, 40));
+      Bullet b = new Bullet(bp.x, bp.y, theta, 20, 5);
       bullets.add(b);
+      elapsed = 0;
     }
     
     accel = PVector.div(force, mass);
@@ -103,6 +111,7 @@ class Player
     pos.add(PVector.mult(velocity, timeDelta));
     force.x = force.y = 0;
     velocity.mult(0.99f);
+    elapsed += timeDelta;
   }
   
 }

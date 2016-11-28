@@ -36,10 +36,11 @@ void draw()
   player.update();
   player.render();
   
-  for(Bullet b:bullets)
+  for (int i = bullets.size() -1 ; i >= 0  ; i --)
   {
+    Bullet b = bullets.get(i); 
     b.update();
-    b.render();
+    b.render();    
   }
   
 }
