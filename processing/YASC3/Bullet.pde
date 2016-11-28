@@ -1,4 +1,4 @@
-class Bullet
+class Bullet extends GameObject // Gets everything from GameObject
 {
   PVector pos;
   PVector forward;
@@ -27,7 +27,7 @@ class Bullet
     popMatrix();
   }
   
-  void update()
+  void update() // Overrides the method in the base class
   {
     forward.x = sin(theta);
     forward.y = - cos(theta);
@@ -52,7 +52,7 @@ class Bullet
     alive += timeDelta;
     if (alive > timeToLive)
     {
-      bullets.remove(this);
+      gameObjects.remove(this);
     }
   }  
 }

@@ -1,19 +1,19 @@
-class Player
+class Player extends GameObject
 {
-  PVector pos;
-  PVector forward;
   PVector velocity;
   PVector accel;
   float theta;
-  float size;
+  
   float radius;
   float mass = 1;
   PShape shape;
+  char up, down, left, right, fire;
+  
   
   // Make different keys control the ship!
   
   
-  Player(float x, float y, float theta, float size)
+  Player(float x, float y, float theta, float size, char up, char down, char left, char right, char fire)
   {
     pos = new PVector(x, y);
     forward = new PVector(0, -1);
@@ -24,6 +24,11 @@ class Player
     this.size = size;
     radius = size / 2;
     
+    this.left = left;
+    this.right = right;
+    this.up = up;
+    this.down = down;
+    this.fire = fire;
     create();
     
   }
@@ -42,7 +47,7 @@ class Player
     shape.endShape(CLOSE);
   }
   
-  void render()
+  void render() // Overrides the method in the base class
   {
     pushMatrix(); // Stores the current transform
     translate(pos.x, pos.y);
@@ -81,28 +86,28 @@ class Player
       
     forward.x = sin(theta);
     forward.y  = -cos(theta);
-    if (checkKey('w'))
+    if (checkKey(up))
     {
       force.add(PVector.mult(forward, power));      
     }
-    if (checkKey('s'))
+    if (checkKey(down))
     {
       force.add(PVector.mult(forward, -power));      
     }
-    if (checkKey('a'))  
+    if (checkKey(left))  
     {
       theta -= 0.1f;
     }
-    if (checkKey('d'))
+    if (checkKey(right))
     {
       theta += 0.1f;
     }
     
-    if (checkKey(' ') && elapsed > toPass)
+    if (checkKey(fire) && elapsed > toPass)
     {
       PVector bp = PVector.add(pos, PVector.mult(forward, 40));
       Bullet b = new Bullet(bp.x, bp.y, theta, 20, 5);
-      bullets.add(b);
+      gameObjects.add(b);
       elapsed = 0;
     }
     
