@@ -4,6 +4,11 @@ class GameObject
   PVector forward;
   float size;
   
+  GameObject()
+  {
+    println("In GameObject default constructor");
+  }
+  
   void update()
   {}
   

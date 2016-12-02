@@ -54,5 +54,19 @@ class Bullet extends GameObject // Gets everything from GameObject
     {
       gameObjects.remove(this);
     }
+    
+    for(int i = 0 ; i < gameObjects.size() ; i ++)
+    {
+      GameObject go = gameObjects.get(i);
+      if (go instanceof Player)
+      {
+        Player p = (Player) go;
+        if (dist(go.pos.x, go.pos.y, this.pos.x, this.pos.y) < p.radius)
+        {
+          p.health --;
+          gameObjects.remove(this);
+        }
+      }
+    }
   }  
 }

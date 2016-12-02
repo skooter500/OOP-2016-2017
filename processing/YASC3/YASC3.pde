@@ -2,9 +2,13 @@ void setup()
 {
   size(500, 500);
   Player player0 = new Player(width / 2, height / 2, 0, 50, 'w', 's', 'a', 'd', ' ');  
-  Player player1 = new Player(100, 100, 0, 50, 'i', 'k', 'j', 'l', '\'');  
+  //Player player1 = new Player(100, 100, 0, 50, 'i', 'k', 'j', 'l', '\'');  
+  
+  AIShip aiShip = new AIShip(50, 100, 50, color(255, 0, 0));  
+  
+  gameObjects.add(aiShip);
   gameObjects.add(player0);
-  gameObjects.add(player1);
+  //gameObjects.add(player1);
   
 }
 

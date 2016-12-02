@@ -8,6 +8,7 @@ class Player extends GameObject
   float mass = 1;
   PShape shape;
   char up, down, left, right, fire;
+  int health;
   
   
   // Make different keys control the ship!
@@ -15,6 +16,7 @@ class Player extends GameObject
   
   Player(float x, float y, float theta, float size, char up, char down, char left, char right, char fire)
   {
+    println("In the player parameterised constructor");
     pos = new PVector(x, y);
     forward = new PVector(0, -1);
     accel = new PVector(0,0);
@@ -29,6 +31,7 @@ class Player extends GameObject
     this.up = up;
     this.down = down;
     this.fire = fire;
+    this.health = 10;
     create();
     
   }
@@ -51,6 +54,8 @@ class Player extends GameObject
   {
     pushMatrix(); // Stores the current transform
     translate(pos.x, pos.y);
+    text("Health: " + health, -20, -50);
+    
     rotate(theta);    
     // Use lines
     /*
