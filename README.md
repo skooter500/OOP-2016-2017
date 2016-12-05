@@ -38,6 +38,21 @@ Some assignments from previous years:
 - Assignment 3 - 30%
 - MCQ's - 16%
 
+# Week 13
+- [Abstract classes](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
+- [Interfaces](https://docs.oracle.com/javase/tutorial/java/concepts/interface.html)
+
+  Abstract classes & interfaces:
+
+  [![YouTube](http://img.youtube.com/vi/4yVTkG-a6zo/0.jpg)](https://www.youtube.com/watch?v=4yVTkG-a6zo)
+
+# Week 12
+- [Dogs Cats & Sheep Polymorphism example](processing/DogsCats)
+
+  Polymorphism:
+
+  [![YouTube](http://img.youtube.com/vi/nt2DzM5n8iw/0.jpg)](https://www.youtube.com/watch?v=nt2DzM5n8iw)
+
 # Week 11
 - [YASC Work in Progress (with bullets)](processing/YASC3)
 
