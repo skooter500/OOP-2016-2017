@@ -15,7 +15,9 @@ Spacewar
 Tower defense
 Marking Scheme:
 
-Code: 30% Gameplay:30% Project management: 20% Visuals: 20%
+Please include a readme file and a YouTube video demo of your assignment
+
+Complexity: 25% Visuals:25% Jazz: 20% Use of git: 20% Documentation: 10%
 
 | Grade | Description |
 | ------|-------------|
