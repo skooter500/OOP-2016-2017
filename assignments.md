@@ -1,6 +1,6 @@
 # Object Oriented Programming Assignments
 
-## Assignment 2 - Due 31 January 2017
+## Assignment 2 - Due 8 February 2017
 
 Last year this assignment was worth 20%
 
