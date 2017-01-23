@@ -1,7 +1,5 @@
 class Bullet extends GameObject // Gets everything from GameObject
 {
-  PVector pos;
-  PVector forward;
   float theta;
   float size;
   float speed = 200;
@@ -23,6 +21,7 @@ class Bullet extends GameObject // Gets everything from GameObject
     pushMatrix();
     translate(pos.x, pos.y);
     rotate(theta);
+    stroke(255);
     line(0, - size / 2, 0, size / 2);
     popMatrix();
   }
@@ -53,20 +52,6 @@ class Bullet extends GameObject // Gets everything from GameObject
     if (alive > timeToLive)
     {
       gameObjects.remove(this);
-    }
-    
-    for(int i = 0 ; i < gameObjects.size() ; i ++)
-    {
-      GameObject go = gameObjects.get(i);
-      if (go instanceof Player)
-      {
-        Player p = (Player) go;
-        if (dist(go.pos.x, go.pos.y, this.pos.x, this.pos.y) < p.radius)
-        {
-          p.health --;
-          gameObjects.remove(this);
-        }
-      }
-    }
+    }    
   }  
 }

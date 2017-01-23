@@ -9,7 +9,7 @@ class Player extends GameObject
   PShape shape;
   char up, down, left, right, fire;
   int health;
-  
+  int ammo;
   
   // Make different keys control the ship!
   
@@ -32,6 +32,7 @@ class Player extends GameObject
     this.down = down;
     this.fire = fire;
     this.health = 10;
+    this.ammo = 10;
     create();
     
   }
@@ -54,7 +55,8 @@ class Player extends GameObject
   {
     pushMatrix(); // Stores the current transform
     translate(pos.x, pos.y);
-    text("Health: " + health, -20, -50);
+    text("Health: " + health, 30, 0);
+    text("Ammo: " + ammo, 30, 20);
     
     rotate(theta);    
     // Use lines
@@ -108,12 +110,13 @@ class Player extends GameObject
       theta += 0.1f;
     }
     
-    if (checkKey(fire) && elapsed > toPass)
+    if (checkKey(fire) && elapsed > toPass && ammo > 0)
     {
       PVector bp = PVector.add(pos, PVector.mult(forward, 40));
       Bullet b = new Bullet(bp.x, bp.y, theta, 20, 5);
       gameObjects.add(b);
       elapsed = 0;
+      ammo --;
     }
     
     accel = PVector.div(force, mass);
@@ -122,6 +125,29 @@ class Player extends GameObject
     force.x = force.y = 0;
     velocity.mult(0.99f);
     elapsed += timeDelta;
+    
+    for(int i = 0 ; i < gameObjects.size() ; i ++)
+    {
+      GameObject go = gameObjects.get(i);
+      if (go instanceof Bullet)
+      {
+        Bullet b = (Bullet) go;
+        if (dist(go.pos.x, go.pos.y, this.pos.x, this.pos.y) < radius)
+        {
+          health --;
+          gameObjects.remove(b);
+        }
+      }
+      if (go instanceof Powerup)
+      {
+        Powerup p = (Powerup) go; // p is of type oowerup so the only method we can call on p is applyTo
+        if (dist(go.pos.x, go.pos.y, this.pos.x, this.pos.y) < radius + 15)
+        {
+          p.applyTo(this);
+          gameObjects.remove(go);
+        }
+      }
+    }
   }
   
 }

@@ -9,7 +9,7 @@ void setup()
   gameObjects.add(aiShip);
   gameObjects.add(player0);
   //gameObjects.add(player1);
-  
+    
 }
 
 ArrayList<GameObject> gameObjects = new ArrayList<GameObject>();
@@ -45,6 +45,13 @@ void draw()
     GameObject go = gameObjects.get(i); 
     go.update();
     go.render();    
+  }
+  
+  if (frameCount % 60 == 0)
+  {
+    AmmoPowerup ammo = new AmmoPowerup();
+    ammo.pos = new PVector(random(0, width), random(0, height));
+    gameObjects.add(ammo);
   }
   
 }
