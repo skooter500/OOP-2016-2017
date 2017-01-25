@@ -38,6 +38,68 @@ Some assignments from previous years:
 - Assignment 3 - 30%
 - MCQ's - 16%
 
+# Semester 2
+
+# Week 1
+- Compiling and running your first java program (video)
+
+  [![YouTube](http://img.youtube.com/vi/WXftKFCtPrQ/0.jpg)](https://www.youtube.com/watch?v=WXftKFCtPrQ)
+
+## Lab
+Today we will make some changes to the Java code we wrote in the class on Monday. Fire up the git bash shell and clone the repo for the course using:
+
+```bash
+git clone https://github.com/skooter500/OOP-2016-2017
+```
+Now cd into the folder java/HelloWorld
+
+To compile the example type:
+
+```bash
+javac ie/dit/*.java
+```
+
+And to run the program type:
+
+```bash
+java ie.dit.Main
+```
+
+## Practice making classes in Java
+
+- Create a new subclass of Animal called ```Cat``` with a field for ```numLives```
+- Make accessors (set and get methods) for numLives
+- Write a Constructor. Call the super class constructor using constructor chaining and also set numLives to be 9
+- Write a method called kill. It should subtract 1 from numLives if numLives is > 0 and print the message "Ouch!". If numLives is 0, you should just print the message "Dead"
+- In the Main class, construct a Cat instance and in a loop, call kill until the Cat is dead.
+
+## Practice using Polymorphism
+
+- Create another subclass of Animal called Dog
+- Make an ArrayList of type Animal 
+      - You have to put the code ```import java.util.*;``` at the top of your Java program to use an ArrayList in Java
+- Add some instances of the Dog and Cat subclass to the ArrayList and print all the entries in the ArrayList
+  - Use a toString() method on the Dog and Cat subclasses to achieve this 
+
+Here is the output of my program:
+
+```
+Misty says Woof!
+Ouch!
+Ouch!
+Ouch!
+Ouch!
+Ouch!
+Ouch!
+Ouch!
+Ouch!
+Ouch!
+Dead
+A dog called Misty
+A cat called Top cat has 0 lives
+A dog called Tara
+```
+
 # Week 13
 - [Abstract classes](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
 - [Interfaces](https://docs.oracle.com/javase/tutorial/java/concepts/interface.html)
