@@ -100,6 +100,8 @@ A cat called Top cat has 0 lives
 A dog called Tara
 ```
 
+There is an MCQ so please logon to webcourses and complete it! Some of the questions have multiple answers 
+
 # Week 13
 - [Abstract classes](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
 - [Interfaces](https://docs.oracle.com/javase/tutorial/java/concepts/interface.html)
