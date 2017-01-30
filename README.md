@@ -40,6 +40,13 @@ Some assignments from previous years:
 
 # Semester 2
 
+# Week 2
+- [All about Matrices](https://www.khanacademy.org/math/precalculus/precalc-matrices)
+- [Matrix multiplication](http://www.mathsisfun.com/algebra/matrix-multiplying.html)
+- [Stackoverflow question about static in java](http://stackoverflow.com/questions/413898/what-does-the-static-keyword-do-in-a-class)
+- [The matrix class we worked on in the class with a toString method and an add method](java/Matrix)
+
+
 # Week 1
 - Compiling and running your first java program (video)
 
@@ -101,6 +108,8 @@ A dog called Tara
 ```
 
 There is an MCQ so please logon to webcourses and complete it! Some of the questions have multiple answers 
+
+- [Solution to the lab](java/DogsCats)
 
 # Week 13
 - [Abstract classes](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
