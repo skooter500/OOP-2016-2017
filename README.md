@@ -48,11 +48,9 @@ Some assignments from previous years:
 
 ## Lab
 
-## Lab
-
 ### Learning outcomes
 - Get practice writing and calling a static method on a class
-- Devlop your computational thinking skills by imp[ementing a matrix multiplication algorithm
+- Develop your computational thinking skills by impementing the matrix multiplication algorithm
 
 Today we will be adding methods to the Matrix class to allow matrix multiplication. Check out the [Matrix](java/Matrix) code we worked on in the class that implements methods for matrix addition. This class class, has two methods for addition that allows us to perform the following operations:
 
