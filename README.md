@@ -46,6 +46,7 @@ Some assignments from previous years:
 - [Stackoverflow question about static in java](http://stackoverflow.com/questions/413898/what-does-the-static-keyword-do-in-a-class)
 - [The matrix class we worked on in the class with a toString method and an add method](java/matrix)
 
+
 ## Lab
 
 ### Learning outcomes
