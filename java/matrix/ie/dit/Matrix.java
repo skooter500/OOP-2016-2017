@@ -39,6 +39,18 @@ public class Matrix
 		return c;
 	}
 	
+	public void add(Matrix b)
+	{
+		for (int row = 0 ; row < rows ; row ++)
+		{
+			for (int col = 0 ; col < cols ; col ++)
+			{				
+				setElement(row, col, getElement(row, col) 
+						+ b.getElement(row, col));
+			}
+		}
+	}	
+	
 	// Set up the matrix as the identity matrix
 	public void identity()
 	{
