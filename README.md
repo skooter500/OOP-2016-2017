@@ -105,6 +105,8 @@ Your program should output the following:
 -3.0 11.0 0.0 1.0
 ```
 
+Login to webcourses and do this week and last weeks MCQ's 
+
 # Week 1
 - Compiling and running your first java program (video)
 
