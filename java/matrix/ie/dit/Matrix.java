@@ -51,6 +51,42 @@ public class Matrix
 		}
 	}	
 	
+	public void mult(Matrix b)
+	{
+		for (int row = 0; row < getRows(); row++)
+		{
+			for (int col = 0; col < b.getCols(); col++)
+			{
+				float sum = 0.0f;
+				for (int i = 0; i < getCols(); i++)
+				{
+					sum += getElement(row, i) * b.getElement(i, col);
+				}
+				setElement(row, col, sum);
+			}
+		}
+	}
+	
+	public static Matrix mult(Matrix a, Matrix b)
+	{
+		Matrix c = new Matrix(a.getRows(), b.getCols());
+
+		for (int row = 0; row < a.getRows(); row++)
+		{
+			for (int col = 0; col < b.getCols(); col++)
+			{
+				float sum = 0.0f;
+				for (int i = 0; i < a.getCols(); i++)
+				{
+					sum += a.getElement(row, i) * b.getElement(i, col);
+				}
+				c.setElement(row, col, sum);
+			}
+		}
+		return c;
+	}
+	
+	
 	// Set up the matrix as the identity matrix
 	public void identity()
 	{
