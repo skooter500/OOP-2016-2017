@@ -124,15 +124,33 @@ public class Matrix
 		}
 	}
 	
+	public static Matrix translation(float px, float py)
+	{
+		Matrix m = new Matrix(3, 3);
+		m.identity();
+		m.setElement(0, 2, px);
+		m.setElement(1, 2, py);
+		return m;
+	}
+	
+	public static Matrix scaling(float sx, float sy)
+	{
+		Matrix m = new Matrix(3,3);
+		m.identity();
+		m.setElement(0, 0, sx);
+		m.setElement(1,1, sy);
+		return m;
+	}
+	
 	public Vector transform(Vector v)
 	{
-		Matrix temp = new Matrix(1, 3);
+		Matrix temp = new Matrix(3, 1);
 		temp.setElement(0, 0, v.x);
-		temp.setElement(0, 1, v.y);
-		temp.setElement(0, 2, 1);
+		temp.setElement(1, 0, v.y);
+		temp.setElement(2, 0, 1);
 		
-		temp.mult(this);
-		return new Vector(temp.getElement(0, 0), temp.getElement(0, 1));
+		Matrix out = Matrix.mult(this, temp);	
+		return new Vector(out.getElement(0, 0), out.getElement(1, 0));
 	}
 	
 	public static Matrix rotation(float theta)
