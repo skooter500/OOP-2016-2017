@@ -4,23 +4,24 @@ public class Main
 {
 	public static void main(String[] args)
 	{
-		Matrix a = new Matrix(4, 4);
-		a.identity();
-		a.setElement(2, 3, 7);
-		a.setElement(3, 1, 2);
-		a.setElement(3, 0, 4);
-
-		Matrix b = new Matrix(4, 4);
-		b.identity();
-		b.setElement(2, 3, 1);
-		b.setElement(3, 1, 9);
-		b.setElement(3, 0, -7);
-
-		Matrix c;
-		c = Matrix.mult(a, b); // How to call a static method
-
+		Matrix m = new Matrix(4,4);
+		m.identity();
+		
+		Matrix m1 = new Matrix(4,4);
+		m1.identity();
+		m.add(m1);
+		System.out.println(m);
+		System.out.println(m1);
+		
+		Matrix c = Matrix.add(m, m1);
+		System.out.println(c);
+		
+		Vector a = new Vector(0, 10);
+		Matrix rot = Matrix.rotation((float) Math.PI);
+		
+		Vector b = rot.transform(a);
 		System.out.println(a);
 		System.out.println(b);
-		System.out.println(c);
+		
 	}
 }

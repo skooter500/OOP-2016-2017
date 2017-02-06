@@ -2,41 +2,36 @@ package ie.dit;
 
 public class Matrix
 {
-	// private means the field can only be accesed by methods in the same class
 	private float[][] elements;
 	
-	private final int rows;
-	private final int cols;
+	private int rows;
+	private int cols;
 	
-	// Read only accessors
 	public int getRows()
 	{
 		return rows;
 	}
 	
-	// public methods can be called by methods outside the package
 	public int getCols()
 	{
 		return cols;
 	}
 	
-	// static means the method is on the class not the instance
-	// Kind of like a c function
-	// This method implements a = b + c on matrices
-	// Add 2 matrices, return a new matrix
-	public static Matrix add(Matrix a, Matrix b)
+	public Matrix(int rows, int cols)
 	{
-		Matrix c = new Matrix(a.rows, a.cols);
-		
-		for (int row = 0 ; row < a.rows ; row ++)
-		{
-			for (int col = 0 ; col < a.cols; col ++)
-			{
-				c.setElement(row, col, a.getElement(row, col) 
-					+ b.getElement(row, col));
-			}
-		}
-		return c;
+		this.rows = rows;
+		this.cols = cols;
+		elements = new float[rows][cols];
+	}
+	
+	public void setElement(int row, int col, float value)
+	{
+		elements[row][col] = value;
+	}
+	
+	public float getElement(int row, int col)
+	{
+		return elements[row][col];
 	}
 	
 	public void add(Matrix b)
@@ -44,25 +39,52 @@ public class Matrix
 		for (int row = 0 ; row < rows ; row ++)
 		{
 			for (int col = 0 ; col < cols ; col ++)
-			{				
-				setElement(row, col, getElement(row, col) 
-						+ b.getElement(row, col));
+			{
+				elements[row][col] += b.elements[row][col];
+				
+				// This will also work!
+				//setElement(row, col, getElement(row, col) 
+				//		+ b.getElement(row, col));
 			}
 		}
-	}	
+	}
+		
 	
-	public void mult(Matrix b)
+	// This method applies to the class Matrix
+	// Not an instance of the class
+	public static Matrix add(Matrix a, Matrix b)
 	{
-		for (int row = 0; row < getRows(); row++)
+		Matrix ret = new Matrix(a.getRows(), a.getCols());
+		
+		for (int row = 0 ; row < a.rows; row ++)
 		{
-			for (int col = 0; col < b.getCols(); col++)
+			for (int col = 0 ; col < a.cols ; col ++)
 			{
-				float sum = 0.0f;
-				for (int i = 0; i < getCols(); i++)
+				ret.elements[row][col] = 
+					a.elements[row][col]
+					+ b.elements[row][col];
+					
+			}
+		}			
+		return ret;		
+	}
+	
+	
+	
+	public void identity()
+	{
+		for(int row = 0 ; row < getRows() ; row ++)
+		{
+			for (int col = 0 ; col < cols ; col ++)
+			{
+				if (row == col)
 				{
-					sum += getElement(row, i) * b.getElement(i, col);
+					setElement(row, col, 1);
 				}
-				setElement(row, col, sum);
+				else
+				{
+					setElement(row, col, 0);
+				}									
 			}
 		}
 	}
@@ -86,58 +108,57 @@ public class Matrix
 		return c;
 	}
 	
-	
-	// Set up the matrix as the identity matrix
-	public void identity()
+	public void mult(Matrix b)
 	{
-		for (int row = 0 ; row < rows ; row ++)
+		for (int row = 0; row < getRows(); row++)
 		{
-			for (int col = 0 ; col < cols; col ++)
+			for (int col = 0; col < b.getCols(); col++)
 			{
-				if (row == col)
+				float sum = 0.0f;
+				for (int i = 0; i < getCols(); i++)
 				{
-					setElement(row, col, 1);
+					sum += getElement(row, i) * b.getElement(i, col);
 				}
-				else
-				{
-					setElement(row, col, 0);				
-				}									
+				setElement(row, col, sum);
 			}
 		}
 	}
 	
-	// get and set the appropriate element in the 2d elements array
-	public float getElement(int row, int col)
+	public Vector transform(Vector v)
 	{
-		return elements[row][col];
+		Matrix temp = new Matrix(1, 3);
+		temp.setElement(0, 0, v.x);
+		temp.setElement(0, 1, v.y);
+		temp.setElement(0, 2, 1);
+		
+		temp.mult(this);
+		return new Vector(temp.getElement(0, 0), temp.getElement(0, 1));
 	}
 	
-	public void setElement(int row, int col, float value)
+	public static Matrix rotation(float theta)
 	{
-		elements[row][col] = value;
+		Matrix m = new Matrix(3, 3);
+		m.identity();
+		m.setElement(0, 0, (float) Math.cos(theta));
+		m.setElement(0, 1, (float) -Math.sin(theta));
+		m.setElement(1, 0, (float) Math.sin(theta));
+		m.setElement(1, 1, (float) Math.cos(theta));		
+		return m;
 	}
 	
-	// Convert the matrix to a string
 	public String toString()
 	{
-		String s = "";
-		for(int row = 0 ; row < rows ; row ++)
-		{
-			for (int col = 0 ; col < cols ; col ++)
-			{
-				s += getElement(row, col) + "\t";
-			}
-			s += "\n";
-		}
-		return s;
-	}
-	
-	// Construct the Matrix
-	public Matrix(int rows, int cols)
-	{
-		this.rows = rows;
-		this.cols = cols;
+		StringBuffer sb = new StringBuffer();
 		
-		elements = new float[rows][cols];
+		for (int row = 0 ; row < this.rows ; row ++)
+		{
+			for (int col = 0 ; col < this.cols ; col ++)
+			{
+				sb.append(elements[row][col]);
+				sb.append("\t");
+			}
+			sb.append("\n");
+		}
+		return sb.toString();
 	}
 }
