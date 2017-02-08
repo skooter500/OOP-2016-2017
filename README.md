@@ -42,7 +42,7 @@ Some assignments from previous years:
 
 # Week 3
 
-- [All about the Levenshtein Distance from my PhD thesis. This might be a bit complicated to read](docs/EditDistance.pdf)
+- [All about the Levenshtein Distance from my PhD thesis. This might be a bit complicated to read](https://github.com/skooter500/DT228-OOP-2015/blob/master/docs/EditDistance.pdf)
 - A lecture I gave about the Levenshtein Distance algorithm from a few years ago:
 
   [![YouTube](http://img.youtube.com/vi/9-8Uj97J85c/0.jpg)](https://www.youtube.com/watch?v=9-8Uj97J85c)
