@@ -40,6 +40,31 @@ Some assignments from previous years:
 
 # Semester 2
 
+# Week 4
+- [Unity tutorials](https://unity3d.com/learn/tutorials)
+- [Unity project we worked on in the class](https://github.com/skooter500/Demo)
+
+Important Unity stuff to know (there are great tutorials online for all this stuff):
+- The Unity editor
+- Using Unity with Visual Studio
+- GameObjects, GameComponents
+- Vector3, Quaternions
+- Transforms & parenting
+- Exposing c# properties to Unity
+- Start & Update methods
+- Using tags
+- Using the input manager
+- Instianting GameObjects from prefabs
+- Colliders & triggers
+- Rigidbodies, forces & torque
+
+# Lab
+## Learning Outcomes
+- Learn how the most popular game engine in the world uses OO principles in the design of it's classes
+
+Clone the repo for the project we made in the class on Monday. You can now shoot and hit the falling bricks. Finish off the game by adding a second player controlled tank add scoring & collisions etc. 
+- Do the Unity MCQ! 
+
 # Week 3
 
 - [All about the Levenshtein Distance from my PhD thesis. This might be a bit complicated to read](https://github.com/skooter500/DT228-OOP-2015/blob/master/docs/EditDistance.pdf)
@@ -109,6 +134,8 @@ Edit distance between: I love DIT and: I love Tunepal is 7.0
 Edit distance between: Games Fleadh and: Imagine Cup is 11.0
 ```
 No MCQ this week
+
+- [Solution to the lab](java/EditDistance)
 
 # Week 2
 - [All about Matrices](https://www.khanacademy.org/math/precalculus/precalc-matrices)
