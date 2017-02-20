@@ -39,6 +39,9 @@ Some assignments from previous years:
 - MCQ's - 16%
 
 # Semester 2
+# Week 5
+- [Exceptions in Java](http://docs.oracle.com/javase/tutorial/essential/exceptions/)
+- [Code for the class](java/SpellChecker)
 
 # Week 4
 - [Unity tutorials](https://unity3d.com/learn/tutorials)
