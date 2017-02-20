@@ -1,5 +1,50 @@
 # Object Oriented Programming Assignments
 
+## Assignment 3
+
+This is your opportunity to really impress me by bringing together all the stuff you have learned this year into one final OOP assignment. You can make anything you like and you can work on a team of up to five people. You can also work alone if you prefer. Games Fleadh/Imagine Cup projects are all encouraged or indeed any other competitions. You can use any OOP language that you like (there are some constraints listed below) and I expect you to have to do self-directed learning on this project.    
+
+Rules:
+- You must use git to manage the source code on your project 
+- If you are on a team I expect to see git commits for each team member
+- You can use Processing, but this must be through Eclipse not the Processing IDE
+- You can use Unity3D, however if you decide to use Unity3D then you project should be mostly code, so consider using algorithms to procedurally generate content 
+
+Some ideas:
+- A music sequencer
+- A music visualiser
+- A music search engine
+- A fractal visualiser
+- An artificial life simulation
+- Steering behaviours (check out [this amazing free book for ideas](http://natureofcode.com/book/))
+- A robot controller, maybe using Lego Mindstorms/Arduino/Raspberry PI
+- A solar system simulator
+- A drawing program
+- A chat bot
+- Something using the Kinect or Leap Motion
+- A classifier
+- Something that analyses a dataset and draws some cool graphs 
+- A neural network that learns to recognise pictures
+- 3D Conways Game of Life
+- A game!
+- An app
+
+Submission dates:
+- Git links/project abstract/team members 27 February
+- Project submission and demos 23 April. Submit git link & video link via Webcourses 
+
+Marking Scheme:
+
+Complexity:30% Polish: 20% Learning 20% Project management: 10% Jazz 20% 
+
+| Grade | Description |
+| ------|-------------|
+| First | A project that looks great. All the visuals are 100% procedural or self drawn and looks beautiful and all the code is self written. There a significant amount of complex gameplay or complex behaviour. For example multiple "modes" or "screens". The assignment has lots of functionality and is technically deep. For example, progression and powerups or a complex algorithm you had to develop. The code is organised into classes that use inheritance, polymorphism, abstract classes and interfaces appropriately. There is a lot of novelty and originality. A significant amount of learning and research outside the class is evident. You have entered a competition, published your assignment on an app store or otherwise disseminated your work outside the course. You will have used git extensively. Everything works |
+| 2.1 | The project looks good. There is a some animation gameplay or complexity. You put in a good effort. Some features may not be complete or entirely working. Probably no file IO, but there should be while loops, for loops if statements etc to control aspects of the assignment. You have used classes, but possibly not inheritance and polymorphism.|
+| 2.2 | The project looks so so, but is pretty basic. There should be some animation or gameplay but significant issues that you couldn't resolve.Not much use evidence of learning outside the class. There is not much code, maybe a page or two. |
+| Pass | All code in one file. Around a hundred lines of code. Looks like it could have been completed in < 1 day. Little or no functionality. Lots of code acquired from other sources or mostly code we used in the class.  |
+| Fail | Something very basic that looks like it could have been completed in an hour. Just drawing code, no control code. The assignment has no interactivity. Significant unaddressed technical problems. No git usage.  |
+
 ## Assignment 2 - Due 8 February 2017
 
 Last year this assignment was worth 20%
