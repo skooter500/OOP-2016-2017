@@ -40,7 +40,7 @@ Some assignments from previous years:
 
 # Semester 2
 # Week 5
-- [Exceptions in Java](http://docs.oracle.com/javase/tutorial/essential/exceptions/)
+- [Exceptions in Java](http://docs.oracle.com/javase/tutorial/essential/exceptions/)
 - [Code for the class](java/SpellChecker)
 
 # Lab
@@ -95,7 +95,7 @@ quit
 
 To complete this lab:
 
-- Clone the repo to get the program we worked on in the class and in the tutorial and study it carefully.
+- Clone the repo to get the program we worked on in the class and study it carefully.
 - [Read this article that explains how you can sort an ArrayList](http://beginnersbook.com/2013/12/java-arraylist-of-object-sort-example-comparable-and-comparator/). If you need to, read it several times!
 - You will notice there is an unimplemented method ```public String[] findClosest(String toFind, int howMany)``` in the class Dictionary. At the moment it just returns null, but you should implement this method.
 - Modify the Main method to call the new method you wrote that returns a String array instead of the method that returns a String. Make whatever other changes are necessary.
