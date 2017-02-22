@@ -89,8 +89,12 @@ public class Matrix
 		}
 	}
 	
-	public static Matrix mult(Matrix a, Matrix b)
+	public static Matrix mult(Matrix a, Matrix b) throws MatrixException
 	{
+		if (a.getCols() != b.getRows())
+		{
+			throw new MatrixException("Rows in a must be equal to cols in b");
+		}
 		Matrix c = new Matrix(a.getRows(), b.getCols());
 
 		for (int row = 0; row < a.getRows(); row++)
@@ -142,7 +146,7 @@ public class Matrix
 		return m;
 	}
 	
-	public Vector transform(Vector v)
+	public Vector transform(Vector v) throws MatrixException
 	{
 		Matrix temp = new Matrix(3, 1);
 		temp.setElement(0, 0, v.x);
