@@ -12,6 +12,9 @@ public class Match implements Comparable
 
 	public int compareTo(Object m)
 	{
-		return (int) (ed - ((Match) m).ed);
+		Match other = (Match) m;
+		//return word.compareTo(other.word);
+		System.out.println("Comparing: " + word + " with " + other.word);
+		return (int) - (ed - ((Match) m).ed);
 	}
 }
