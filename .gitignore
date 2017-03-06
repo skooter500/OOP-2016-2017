@@ -23,6 +23,8 @@ local.properties
 .loadpath
 .recommenders
 
+/RemoteSystemsTempFiles
+
 # Eclipse Core
 #.project
 
