@@ -2,7 +2,7 @@
 
 ## Assignment 3
 
-This is your opportunity to really impress me by bringing together all the stuff you have learned this year into one final OOP assignment. You can make anything you like and you can work on a team of up to five people. You can also work alone if you prefer. Games Fleadh/Imagine Cup projects are all encouraged or indeed any other competitions. You can use any OOP language that you like (there are some constraints listed below) and I expect you to have to do self-directed learning on this project.    
+This is your opportunity to really impress me by bringing together all the stuff you have learned this year into one final OOP assignment. You can make anything you like and you can work on a team of up to five people. You can also work alone if you prefer. Games Fleadh/Imagine Cup projects are all encouraged or indeed any other competitions. You can use any OOP language that you like (there are some constraints listed below) and I expect you to have to do self-directed learning on this project.    
 
 Rules:
 - You must use git to manage the source code on your project 
