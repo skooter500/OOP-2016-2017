@@ -3,11 +3,14 @@ package ie.dit;
 import ddf.minim.AudioInput;
 import ddf.minim.AudioSample;
 import ddf.minim.Minim;
+import ddf.minim.analysis.FFT;
+import ddf.minim.analysis.WindowFunction;
 import processing.core.PApplet;
 
 public class AudioViz2017 extends PApplet{
 	Minim minim;
 	AudioSample audioInput;
+	FFT fft;
 	
 	static final int FRAME_SIZE = 2048;
 	static final int SAMPLE_RATE = 44100;
@@ -17,6 +20,7 @@ public class AudioViz2017 extends PApplet{
 		minim = new Minim(this);
 		//audioInput = minim.getLineIn(Minim.MONO, FRAME_SIZE, SAMPLE_RATE, 16);
 		audioInput = minim.loadSample("scale.wav", FRAME_SIZE);		
+		fft = new FFT(FRAME_SIZE, SAMPLE_RATE);
 	}
 	
 	boolean lastPressed = false;
@@ -58,6 +62,16 @@ public class AudioViz2017 extends PApplet{
 			text("Frequency: " + frequency, 10,10);
 		}
 		
+		fft.window(FFT.HAMMING);
+		fft.forward(audioInput.left);
+		stroke(0, 255, 255);
+		int maxIndex = -1;
+		for(int i = 0 ; i < fft.specSize(); i ++)
+		{
+			line(i, height, i, height - (fft.getBand(i) * 50));
+		}
+		
+		float fftFreq = fft.indexToFreq(maxIndex);
 		noStroke();
 		fill(0, 255, 0);
 		float min = 100;		
