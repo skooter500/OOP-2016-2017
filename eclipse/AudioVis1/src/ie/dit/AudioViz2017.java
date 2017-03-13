@@ -57,21 +57,33 @@ public class AudioViz2017 extends PApplet{
 		float frequency = count * (SAMPLE_RATE / FRAME_SIZE);
 		
 		fill(255);
-		if (average > 0.05f)
-		{
-			text("Frequency: " + frequency, 10,10);
-		}
+		
 		
 		fft.window(FFT.HAMMING);
 		fft.forward(audioInput.left);
 		stroke(0, 255, 255);
 		int maxIndex = -1;
+		float maxEnergy = Float.MIN_VALUE;
 		for(int i = 0 ; i < fft.specSize(); i ++)
 		{
-			line(i, height, i, height - (fft.getBand(i) * 50));
+			float energy = fft.getBand(i);
+			if (energy > maxEnergy)
+			{
+				maxEnergy = energy;
+				maxIndex = i;
+			}
+			line(i, height, i, height - (energy * 50));
+			
 		}
 		
 		float fftFreq = fft.indexToFreq(maxIndex);
+		
+		if (average > 0.05f)
+		{
+			text("Zero crossings Frequency: " + frequency, 10,10);
+			text("FFT Frequency: " + fftFreq, 10,30);
+		}
+		
 		noStroke();
 		fill(0, 255, 0);
 		float min = 100;		
