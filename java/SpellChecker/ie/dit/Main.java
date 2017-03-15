@@ -4,8 +4,8 @@ public class Main
 {
 	public static void main(String[] args)
 	{
-		String sa = "I love DIT";
-		String sb = "I love Tunepal";
+		String sa = "BigLez";
+		String sb = "Sassy";
 		System.out.println("Edit distance between: " + sa + " and: " + sb + " is " + EditDistance.EditDistance(sa, sb));
 
 		sa = "Games Fleadh";
