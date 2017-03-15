@@ -9,7 +9,19 @@ public class PitchSpeller
 	
 	public String spell(float frequency)
 	{
-		return ""; 
+		int minIndex = -1;
+		float minDiff = Float.MAX_VALUE;
+		
+		for(int i = 0 ; i < frequencies.length ; i ++)
+		{
+			float diff = Math.abs(frequency - frequencies[i]);
+			if (diff < minDiff)
+			{
+				minDiff = diff;
+				minIndex = i;
+			}
+		}
+		return spellings[minIndex];
 	}
 	
 }

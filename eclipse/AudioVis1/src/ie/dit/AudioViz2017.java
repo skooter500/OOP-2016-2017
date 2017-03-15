@@ -12,6 +12,8 @@ public class AudioViz2017 extends PApplet{
 	AudioSample audioInput;
 	FFT fft;
 	
+	PitchSpeller pitchSpeller = new PitchSpeller();
+	
 	static final int FRAME_SIZE = 2048;
 	static final int SAMPLE_RATE = 44100;
 	
@@ -21,12 +23,17 @@ public class AudioViz2017 extends PApplet{
 		//audioInput = minim.getLineIn(Minim.MONO, FRAME_SIZE, SAMPLE_RATE, 16);
 		audioInput = minim.loadSample("scale.wav", FRAME_SIZE);		
 		fft = new FFT(FRAME_SIZE, SAMPLE_RATE);
+		tf.loadTunes();
 	}
 	
 	boolean lastPressed = false;
 	
+	String transcription = "";
+	TuneFinder tf = new TuneFinder();
+	
 	public void draw()
 	{
+		
 		if (keyPressed && key == ' ' && ! lastPressed)
 		{
 			audioInput.trigger();
@@ -82,14 +89,32 @@ public class AudioViz2017 extends PApplet{
 		{
 			text("Zero crossings Frequency: " + frequency, 10,10);
 			text("FFT Frequency: " + fftFreq, 10,30);
+			String zcSpell = pitchSpeller.spell(frequency);
+			String fftSpell = pitchSpeller.spell(fftFreq);
+			text("ZC Spelling: " + zcSpell, 10, 50);
+			text("FFT Spelling: " + fftSpell, 10, 70);
+			if (transcription.length() > 0)
+			{
+				String lastChar = transcription.substring(transcription.length() - 1);
+				if (!lastChar.equals(fftSpell))
+				{
+					transcription += fftSpell;
+				}
+			}
+			else
+			{
+				transcription += fftSpell;
+			}				
 		}
+		text("Transcription: " + transcription, 10, 70);
+		
 		
 		noStroke();
 		fill(0, 255, 0);
 		float min = 100;		
 		float target = min + average * mid * 2;
 		circleRadius = lerp(circleRadius, target, 0.1f);
-		ellipse(mid, mid, circleRadius, circleRadius);
+		//ellipse(mid, mid, circleRadius, circleRadius);
 		
 	}
 	
