@@ -5,17 +5,28 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class TuneFinder {
 	String driver = "org.sqlite.JDBC";
 	String url = "jdbc:sqlite:tunes.sqlite";
+	
+	public ArrayList<Tune> tunes = new ArrayList<Tune>();
+	
+	public void printTunes(ArrayList<Tune> tunes)
+	{
+		for(Tune t:tunes)
+		{
+			System.out.println(t);
+		}
+	}
 	
 	void loadTunes()
 	{
 		Connection c;
 		PreparedStatement ps;
 		ResultSet rs;
-		
+		tunes.clear();
 		try
 		{
 			Class.forName(driver);
@@ -26,9 +37,9 @@ public class TuneFinder {
 			rs = ps.executeQuery();
 			while(rs.next())
 			{
-				System.out.println(rs.getString("title"));
-			}
-			
+				Tune tune = new Tune(rs);
+				tunes.add(tune);
+			}			
 		}
 		catch(ClassNotFoundException e)
 		{
