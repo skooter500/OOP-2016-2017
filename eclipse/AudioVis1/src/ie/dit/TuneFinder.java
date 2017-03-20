@@ -21,6 +21,37 @@ public class TuneFinder {
 		}
 	}
 	
+	void loadTunes(String title)
+	{
+		ResultSet rs;
+		tunes.clear();
+		try(Connection c = DriverManager.getConnection(url);
+				PreparedStatement ps = c.prepareStatement("select * from tuneindex where title like ?"))
+		{
+			Class.forName(driver);
+			
+			ps.setString(1, "%" + title + "%");
+			
+			rs = ps.executeQuery();
+			while(rs.next())
+			{
+				Tune tune = new Tune(rs);
+				tunes.add(tune);
+			}			
+		}
+		catch(ClassNotFoundException e)
+		{
+			System.out.println("Driver not found");
+			e.printStackTrace();
+		}
+		catch(SQLException e)
+		{
+			System.out.println("SQL Exception");
+			e.printStackTrace();
+		}
+		
+	}
+	
 	void loadTunes()
 	{
 		Connection c;
@@ -31,9 +62,7 @@ public class TuneFinder {
 		{
 			Class.forName(driver);
 			c = DriverManager.getConnection(url);
-			ps = c.prepareStatement("select * from tuneindex where title like ?");
-			ps.setString(1, "%maid%");
-			
+			ps = c.prepareStatement("select * from tuneindex where title like ?");			
 			rs = ps.executeQuery();
 			while(rs.next())
 			{
