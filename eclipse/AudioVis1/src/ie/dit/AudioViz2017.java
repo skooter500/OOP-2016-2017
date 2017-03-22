@@ -27,7 +27,7 @@ public class AudioViz2017 extends PApplet{
 		//audioInput = minim.getLineIn(Minim.MONO, FRAME_SIZE, SAMPLE_RATE, 16);
 		audioInput = minim.loadSample("scale.wav", FRAME_SIZE);		
 		fft = new FFT(FRAME_SIZE, SAMPLE_RATE);
-		tf.loadTunes();
+		tf.loadTunes(3);
 		tf.printTunes(tf.tunes);
 	}
 	

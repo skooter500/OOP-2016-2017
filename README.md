@@ -40,6 +40,36 @@ Some assignments from previous years:
 
 # Semester 2
 
+# Week 9
+- Transcribing to a string on music notes
+- Guest lecture from [James Ryan of ZMachine]()
+
+# Lab
+## Learning Outcomes
+- Practice using an IDE
+- Complete building and testing our music information retrieval system 
+- Feel happy when your program can recognise tunes
+
+In today's lab you can finish building the music information retrieval system we have been working on this semester. What you should do:
+
+- Get the code from Monday's class
+- Implement the method public ```Tune findTune(String notes)``` in the class TuneFinder
+    - This method should go through the ArrayList of Tunes and for each one, calculate the edit distance between the notes parameter and the searchKey field in each Tune. return the name of the tune with the lowest edit distance.
+- In the class ```AudioVis2017```, call this method when you transcribe 60 notes and print the name of matching tune to the screen
+- Test your program out with the audio files in the project. The names of the files are the correct tune names  
+
+Advanced!
+
+- Write a mathod that returns the top 10 closest matching tunes with their confidence scores. Maybe you should add a field to the tune to hold the confidence score. I use the following equation to calculate the confidence score:
+
+  1 - (ed / ts)
+
+  Where ed is the edit distance and ts is the length of the transcrided string. In our case, 60. For example if the edit distance was 5, then the confidence score would be:
+
+  1 - (5 / 60) =  .91
+
+  If you got these numbers, you could say that the algorithm was 91% confident it got the coprrect matching tune as just 5 out of the 60 notes were wrong
+
 # Week 8
 - [JDBC Tutorial](https://docs.oracle.com/javase/tutorial/jdbc/basics/processingsqlstatements.html)
 - [The SQLite JDBC Driver](https://bitbucket.org/xerial/sqlite-jdbc/downloads)
