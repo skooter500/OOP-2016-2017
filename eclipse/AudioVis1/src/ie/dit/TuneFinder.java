@@ -33,12 +33,28 @@ public class TuneFinder {
 		}
 	}
 	
+	public Tune findClosest(String notes)
+	{
+		float closestEd = Float.MAX_VALUE;
+		Tune closest = null;
+		for(Tune t:tunes)
+		{
+			float ed = EditDistance.substringEditDistance(notes, t.getSearchKey());
+			if (ed < closestEd)
+			{
+				closestEd = ed;
+				closest = t;
+			}
+		}
+		return closest;
+	}
+	
 	void loadTunes(int source)
 	{
 		ResultSet rs;
 		tunes.clear();
 		try(Connection c = DriverManager.getConnection(url);
-				PreparedStatement ps = c.prepareStatement("select * from tuneindex where source like ?"))
+				PreparedStatement ps = c.prepareStatement("select * from tuneindex where source = ?"))
 		{
 			
 			ps.setInt(1, source);

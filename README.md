@@ -40,9 +40,72 @@ Some assignments from previous years:
 
 # Semester 2
 
+# Week 10
+## Lecture
+- [IEEE 754 Floating Point Format slides](https://1drv.ms/p/s!Ak7y2552PWCrkNBEkRZ0g4ASnVa93A)
+- [All about floating point numbers](http://steve.hollasch.net/cgindex/coding/ieeefloat.html)
+
+Here is a little C++ program that will print the bit pattern of a variable:
+
+```C++
+#include<iostream>
+
+using namespace std;
+
+void binaryPrint(unsigned char * buff, int size);
+
+void binaryPrint(unsigned char * buff, int size)
+{
+	for (int i = (size -1) ; i >= 0; i --)
+	{
+		unsigned char mask = 128;
+		for (int j = 0 ; j < 8 ; j ++)
+		{
+			cout << ((buff[i] & mask) ? "1" : "0");
+			mask = mask >> 1; 
+		}		
+	}
+	cout << endl;
+}
+
+void main()
+{
+	float i;
+	//float i = 53.34977f;
+	//float i = -6.260309f;
+
+	//i = 48.8648791f;
+	//i = 2.3428718f;
+
+	i = 38.8894515f;
+	i = -77.0348573f;
+
+	i = 10.75f;
+	binaryPrint((unsigned char *) & i, sizeof(float));
+	cout << endl;
+}
+```
+
+## Lab
+### Learning outcomes
+- Understand how ints and floats are stored
+
+- Convert -58 to binary two’s compliment notation
+- Subtract 58 from 100 using binary 2’s compliment arithmetic
+- Convert –1024.5625 to 32 bit IEEE 754 floating point representation
+- Here are pairs of bit patterns that represent the latitude and longitude of places on the Earth in IEEE format. Convert them to base 10 numbers and use [this webpage](https://developers.google.com/maps/documentation/javascript/examples/geocoding-reverse) to find out where the locations are on the earth:
+    - 01000010010101010110011000101010
+    - 11000000110010000101010001110100
+
+    - 01000010010000110111010110100011
+    - 01000000000101011111000110011101
+
+    - 01000010000110111000111011001100
+    - 11000010100110100001000111011001 
+
 # Week 9
 - Transcribing to a string on music notes
-- Guest lecture from [James Ryan of ZMachine]()
+- Guest lecture from [James Ryan of ZMachine](https://www.facebook.com/zmachinevisuals/?fref=ts)
 
 # Lab
 ## Learning Outcomes

@@ -13,7 +13,7 @@ import processing.core.PApplet;
 
 public class AudioViz2017 extends PApplet{
 	Minim minim;
-	AudioSample audioInput;
+	AudioInput audioInput;
 	FFT fft;
 	
 	PitchSpeller pitchSpeller = new PitchSpeller();
@@ -24,24 +24,30 @@ public class AudioViz2017 extends PApplet{
 	public void setup()
 	{
 		minim = new Minim(this);
-		//audioInput = minim.getLineIn(Minim.MONO, FRAME_SIZE, SAMPLE_RATE, 16);
-		audioInput = minim.loadSample("scale.wav", FRAME_SIZE);		
+		audioInput = minim.getLineIn(Minim.MONO, FRAME_SIZE, SAMPLE_RATE, 16);
+		//audioInput = minim.loadSample("luckyinlove.mp3", FRAME_SIZE);		
 		fft = new FFT(FRAME_SIZE, SAMPLE_RATE);
-		tf.loadTunes(3);
+		tf.loadTunes(2);
 		tf.printTunes(tf.tunes);
+		
+		System.out.println(
+				"Substring ed test:"
+				+ EditDistance.substringEditDistance("abc", "xxxabdxxx")
+				);
 	}
 	
 	boolean lastPressed = false;
 	
 	String transcription = "";
 	TuneFinder tf = new TuneFinder();
+	Tune closestMatch = null;
 	
 	public void draw()
 	{
 		
 		if (keyPressed && key == ' ' && ! lastPressed)
 		{
-			audioInput.trigger();
+			//audioInput.trigger();
 			lastPressed = true;
 		}
 		else
@@ -90,7 +96,7 @@ public class AudioViz2017 extends PApplet{
 		
 		float fftFreq = fft.indexToFreq(maxIndex);
 		
-		if (average > 0.05f)
+		if (average > 0.001f)
 		{
 			text("Zero crossings Frequency: " + frequency, 10,10);
 			text("FFT Frequency: " + fftFreq, 10,30);
@@ -111,7 +117,19 @@ public class AudioViz2017 extends PApplet{
 				transcription += fftSpell;
 			}				
 		}
-		text("Transcription: " + transcription, 10, 70);
+		if (transcription.length() > 60)
+		{
+			closestMatch = tf.findClosest(transcription);
+			transcription = "";
+		}			
+		
+		if (keyPressed && key == ' ')
+		{
+			transcription = "";
+		}
+		
+		text("Transcription: " + transcription, 10, 90);
+		text("Closest Match: " + closestMatch, 10, 110);
 		
 		
 		noStroke();
